@@ -9,3 +9,5 @@
 * Arrays, Vectors
 * Objects
 * Prototypes
+* Detailed in Browser Javascript and DOM Manipulation : *incomplete*
+* Nodejs *incomplete*
