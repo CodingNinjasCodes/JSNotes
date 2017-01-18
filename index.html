@@ -13,17 +13,17 @@
 		<ul class="tab">
 		  <a href="http://www.codingninjas.in/"><img src="images/logo.png"></a>
 		  <li onclick="openPage(event, 'introduction')" class="first"><a href="javascript:void(0)" class="tablinks">Introduction</a></li>
-		  <li onclick="openPage(event, 'tags')"><a href="javascript:void(0)" class="tablinks">Tags, Attributes and Elements</a></li>
-		  <li onclick="openPage(event, 'page-title')"><a href="javascript:void(0)" class="tablinks">Page Title</a></li>
-		  <li onclick="openPage(event, 'paragraphs')"><a href="javascript:void(0)" class="tablinks">Paragraphs</a></li>
-		  <li onclick="openPage(event, 'headings')"><a href="javascript:void(0)" class="tablinks">Headings</a></li>
-		  <li onclick="openPage(event, 'lists')"><a href="javascript:void(0)" class="tablinks">Lists</a></li>
-		  <li onclick="openPage(event, 'links')"><a href="javascript:void(0)" class="tablinks">Links</a></li>
-		  <li onclick="openPage(event, 'images')"><a href="javascript:void(0)" class="tablinks">Images</a></li>
-		  <li onclick="openPage(event, 'tables')"><a href="javascript:void(0)" class="tablinks">Tables</a></li>
-		  <li onclick="openPage(event, 'rowspan')"><a href="javascript:void(0)" class="tablinks">Table: rowspan</a></li>
-		  <li onclick="openPage(event, 'colspan')"><a href="javascript:void(0)" class="tablinks">Table: colspan</a></li>
-		  <li onclick="openPage(event, 'forms')"><a href="javascript:void(0)" class="tablinks">Forms</a></li>
+		  <li onclick="openPage(event, 'variables')"><a href="javascript:void(0)" class="tablinks">Variables</a></li>
+		  <li onclick="openPage(event, 'data-types')"><a href="javascript:void(0)" class="tablinks">Datatypes</a></li>
+		  <li onclick="openPage(event, 'operators')"><a href="javascript:void(0)" class="tablinks">Operators</a></li>
+		  <li onclick="openPage(event, 'logical-operators')"><a href="javascript:void(0)" class="tablinks">Logical Operators</a></li>
+		  <li onclick="openPage(event, 'conditional-operators')"><a href="javascript:void(0)" class="tablinks">Conditional Operators</a></li>
+		  <li onclick="openPage(event, 'for-while')"><a href="javascript:void(0)" class="tablinks">For, While</a></li>
+		  <li onclick="openPage(event, 'functions')"><a href="javascript:void(0)" class="tablinks">Functions</a></li>
+		  <li onclick="openPage(event, 'array-vectors')"><a href="javascript:void(0)" class="tablinks">Array Vectors</a></li>
+		  <li onclick="openPage(event, 'objects')"><a href="javascript:void(0)" class="tablinks">Objects</a></li>
+		  <li onclick="openPage(event, 'prototypes')"><a href="javascript:void(0)" class="tablinks">Prototypes</a></li>
+		  <!--<li onclick="openPage(event, 'forms')"><a href="javascript:void(0)" class="tablinks">Forms</a></li>
 		  <li onclick="openPage(event, 'htmlvscss')"><a href="javascript:void(0)" class="tablinks">HTML vs CSS</a></li>
 		  <li onclick="openPage(event, 'css-getting-started')"><a href="javascript:void(0)" class="tablinks">CSS: Getting Started</a></li>
 		  <li onclick="openPage(event, 'css-inline')"><a href="javascript:void(0)" class="tablinks">CSS: Inline</a></li>
@@ -60,7 +60,7 @@
 		  <li onclick="openPage(event, 'background')"><a href="javascript:void(0)" class="tablinks">Background</a></li>
 		  <li onclick="openPage(event, 'transformations')"><a href="javascript:void(0)" class="tablinks">Transformations</a></li>
 		  <li onclick="openPage(event, 'gradients')"><a href="javascript:void(0)" class="tablinks">Gradients</a></li>
-		  <li onclick="openPage(event, 'media-queries')"><a href="javascript:void(0)" class="tablinks">Media Queries</a></li>
+		  <li onclick="openPage(event, 'media-queries')"><a href="javascript:void(0)" class="tablinks">Media Queries</a></li>-->
 		</ul>
 
 		<div id="default" class="default-page">
@@ -78,619 +78,88 @@
 		  <h3 class="heading">Introduction</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<div class="explanationText">
-		 		HTML is used to provide the content(words, images, audio, video, and so on) to the web pages. CSS is then used to improve the presentation of the content. All you need is a text editor to make html files. Just remember to save them with “.html” extension! To view the page open the file with a web browser. Sample HTML code looks like this:
-		  	</div>
-
-
-		  	<xmp class="code"><!DOCTYPE html>
-<html>
-<head>
-    <title>Page title here</title>
-</head>
-<body>
-    This is sample text...<br>
-    You are beginning to learn HTML.
-    <!-- We use this syntax to write comments -->
-    <!-- Page content and rest of the tags here.... -->
-    <!-- This is the actual area that gets shown in the browser -->
-</body>
-</html></xmp>
-		  <p class="explanationText">
-		    The file when opened in a web browser appears as
-		  </p>
-		  <div class ="explanationImage">
-		  	<img src="./images/Introduction/first_web_page.png">
-		  </div>
-
-		  <div class="explanationText">
-		  	HTML is a tag based language. They are defined within the angle brackets. Description and definition of tags used in the above example is given in next section.
-		  </div>		
+		  			
 		  </div>
 		</div>
 
 
-		<div id="tags" class="tabcontent">
-		  <h3 class="heading">Tags, Attributes and Elements</h3>
+		<div id="variables" class="tabcontent">
+		  <h3 class="heading">Variables</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<div class="explanationText">
-			  	Basic HTML just contains plain text. All the awesome things are included using the following things:
-		  	</div>
-		  	<div class="card-panel orange lighten-5 flow-text">Tags</div>
-		  		<div class="explanationText">
-		  			 <p>
-			  			 Meaning to the plain text of HTML is applied using tags. i.e. tags define various elements of the document.
-			  			 <br>
-			  			 Most of the tags have opening and closing. The closing is just the name of the tag with character '/' in the beginning. A tag needs to have a closing tag if it includes some content. Tag with an opening and closing can have any number of tags included within itself!
-			  			 Eg: &lthtml&gt and &lt/html&gt. 
-			  			 <br>
-			  			 When a tag doesn't contain any content but is just meant to symbolify something then it doesn't need the closing tag.
-			  			 Eg: &ltbr&gt is used to give line break in text. It doesn't have any content but just directs the browser to show the remaining content from next line. 
-		  			 </p>
-
-		  			 Description of the tags used in the previous section is as follows:
-		  		</div>
-		  		<ul class="explanationNote">
-		  		<li>&lt!DOCTYPE html&gt tells the browser that the file being displayed contains HTML5</li>
-		  		<li> &lthtml&gt and &lt/html&gt meant to contain all the html data</li>
-		  		<li> &lthead&gt and &lt/head&gt provides information about the document</li>
-		  		<li> &lttitle&gt and &lt/title&gt provides a title for the document</li>
-		  		<li> &ltbody&gt and &lt/body&gt contains all the things visible on the web page</li>
-		  	</ul>
-		  	<p class="explanationNote">
-		  		<em>NOTE:</em> You might come across “self-closing” tags, whereby a br tag, for example, will look like “&ltbr /&gt” instead of simply “&ltbr&gt”. This is a remnant of XHTML, a form of HTML based on another markup language called XML. HTML5 is much more chilled out than XHTML and will be happy with either format. Some developers prefer one way, some prefer the other.
-		  	</p>
-
-		  	<br>
-		  	<div class="card-panel orange lighten-5 flow-text">Attributes</div>
-		  	<p class="explanationText">
-		  		Attributes control tag behaviour.They are present in the opening tags. They consist of two parts: First is the name of attribute and second is its value which is enclosed within double inverted commas.Example:
-		  		<br>
-		  		<div class="code">
-			  		<xmp><tag_name attribute_name="value_value">Content Enclosed</tag_name></xmp>
-		  		</div>
-		  	</p>
-
-			<div class="card-panel orange lighten-5 flow-text">Elements</div>
-		  	<div class="explanationImage"><img src="./images/page2/element_analogy.png"></div>
-		  	<p class="explanationText">
-		  		Elements are the things that actually make up the web page. Tags just define the beginning and end of the elements. Everything that a web page includes is an HTML element.
-		  	</p>
-		  </div>
+		   </div>
 		</div>
 
-		<div id="page-title" class="tabcontent">
-		  <h3 class="heading">Page Title</h3>
+		<div id="data-types" class="tabcontent">
+		  <h3 class="heading">Datatypes</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">
-		  		Head of a document is the place where information about the document is written. The title of the document is mentioned in the head using the &lttitle&gt tag.
-		  	</p>
-		  	<div class="code">	
-		  	<xmp><!DOCTYPE html>
-<html>
-<head></xmp>
-<span class="highlightCode">xmp&lttitle&gtThis is the Title&lt/title&gt
-</span>
-<xmp></head>
-<body>
-    <!--Syntax for the body goes here-->
-</body>
-</html></xmp>
-		  	</div>
-			<p class="explanationText">
-		    	This is rendered as:
-		    </p>
-		  	<div class="explanationImage">
-		  		<img src="./images/page3/title.png">
-		  	</div>
-		  	<p class="explanationText">
-		    	Notice the title of the page appears as the name of the tab!
-		    </p>
-		  </div>
+		  	  </div>
 		</div>
 
-		<div id="paragraphs" class="tabcontent">
-		  <h3 class="heading">Paragraphs</h3>
+		<div id="operators" class="tabcontent">
+		  <h3 class="heading">Operators</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		    <p class="explanationText">
-		    	Paragraphs are blocks of text separated from each other by some space. They are defined using the &ltp&gt and &lt/p&gt tags. When p tag ends, the next thing appears in next line.
-		    </p>
-		    <xmp class="code"><!DOCTYPE html>
-<html>
-<head>
-<title>p tag</title>
-</head>
-<body>
-    <p>This is line 1.</p>
-    <p>This is line 2.</p>
-    <p>This is line 3.</p>
-    <br>
-	<!-- trying to format the text without using p-tag -->
-    This is line 1.
-    This is line 2.
-    This is line 3.
-</body>
-</html></xmp>
-			<p class="explanationText">
-				It appears on a web browser like this:
-			</p>
-			<div class="explanationImage">
-				<img src="./images/page4/p_tag.png">
-			</div>
-			<p class="explanationText">
-				When formating without p-tag, new lines are appended on the current line. This happens because the browser doesn’t see to the formatting of text. You have to use appropriate tags for formatting the text. More on formatting text would be there later in this tutorial.
-			</p>
-		  </div>
+		    </div>
 		</div>
 
-		<div id="headings" class="tabcontent">
-		  <h3 class="heading">Headings</h3>
+		<div id="logical-operators" class="tabcontent">
+		  <h3 class="heading">Logical Operators</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">
-		  		There are tags in HTML to mark some content as headings. In fact, there are six different levels of headings h1, h2, h3, h4, h5 and h6. h1 is the mightiest i.e. it is the largest heading and h6 is the smallest level heading.
-		  	</p>
-		  	<xmp class="code"><!DOCTYPE html>
-<html>
-<head>
-<title>Heading Levels</title>
-</head>
-<body>
-	<h1>Heading level 1</h1>
-	<h2>Heading level 2</h2>
-	<h3>Heading level 3</h3>
-	<h4>Heading level 4</h4>
-	<h5>Heading level 5</h5>
-	<h6>Heading level 6</h6>
-</body>
-</html></xmp>
-			<div class="explanationImage">
-				<img src="./images/page5/headings.png">
-			</div>	
+		  		
 		  </div>
 		</div>
 
-		<div id="lists" class="tabcontent">
-		  <h3 class="heading">Lists</h3>
+		<div id="conditional-operators" class="tabcontent">
+		  <h3 class="heading">Conditional Operators</h3>
 		  <div class="content">
-		  	<p class="explanationText">
-		  	There are three type of lists in html. First two are ordered lists and unordered lists. They both are almost the same. Unordered lists are used when the numbering of items is not required and by default the items are followed by bullets. Whereas in ordered lists the items are displayed by a preceding numbering. The numbering style can be controlled by CSS that you will be learning soon!!
-		  	</p>
-		  	<div class="card-panel orange lighten-5 flow-text">Unordered Lists</div>
-		  	<p class="explanationText">
-		  		They are defined using the &ltul&gt tag and the items are enclosed in the &ltli&gt tags.
-		  	</p>
-		  	<xmp class="code"><!DOCTYPE html>
-<html>
-<head>
-<title>Unordered Lists</title>
-</head>
-<body>
-	<h1>Lists</h1>
-	<ul>
-	  <li>first item</li>
-	  <li>second item</li>
-	  <li>third item</li>
-	</ul>
-</body>
-</html></xmp>
-			<p class="explanationText">
-				The output is as follows:
-			</p>
-			<div class="explanationImage">
-				<img src="./images/page6/ordered_list.png">
-			</div>
-			<p class="explanationText">
-				Nesting of lists can be done which means that lists-items can contain sub-lists in them.
-			</p>
-			<xmp class="code"><!DOCTYPE html>
-<html>
-<head>
-<title>Unordered Lists</title>
-</head>
-<body>
-	<h1>Lists</h1>
-	<ul>
-  <li>first item</li>
-  <li>second item
-  <!-- Look, the closing </li> tag is not placed here! -->
-    <ul>
-      <li>second item first subitem</li>
-      <li>second item second subitem
-      <!-- Same for the second nested unordered list! -->
-        <ul>
-          <li>second item second subitem first sub-subitem</li>
-          <li>second item second subitem second sub-subitem</li>
-          <li>second item second subitem third sub-subitem</li>
-        </ul>
-      </li>
-      <!-- Closing </li> tag for the li that contains the third
-       unordered list -->
-      <li>second item third subitem</li>
-    </ul>
-  </li>               <!-- Here is the closing </li> tag -->
-  <li>third item</li>
-</ul>
-</body>
-</html></xmp>
-			<p class="explanationText">
-				The output is as follows:
-			</p>
-			<div class="explanationImage">
-				<img src="./images/page6/unordered_list_nesting.png">
-			</div>
-			<p class="explanationText">
-				There is no limitation to the depth of nested lists.
-			</p>
-
-			<br>
-			<div class="card-panel orange lighten-5 flow-text">Ordered Lists</div>
-		  	<p class="explanationText">
-		  		They are defined using the &ltol&gt tag and the items are enclosed in the &ltli&gt tags.Typically, ordered-list items are displayed with a preceding numbering. The numbering style can be of any kind like like numerals, letters or Romans numerals. The default one is numerals
-		  	</p>
-		  	<xmp class="code"><!DOCTYPE html>
-<html>
-<head>
-<title>Onordered Lists</title>
-</head>
-<body>
-	<h1>Lists</h1>
-	<ol>
-	  <li>first item</li>
-	  <li>second item</li>
-	  <li>third item</li>
-	</ol>
-</body>
-</html></xmp>
-			<p class="explanationText">
-				The output is as follows:
-			</p>
-			<div class="explanationImage">
-				<img src="./images/page6/ordered_list.png">
-			</div>
-			<p class="explanationText">
-				Using the attribute 'start' we can specify from where the numbering starts by giving its value.
-			</p>
-			<xmp class="code"><!DOCTYPE html>
-<html>
-<head>
-<title>Onordered Lists</title>
-</head>
-<body>
-	<h1>Lists</h1>
-	<ol start="7">
-	  <li>first item</li>
-	  <li>second item</li>
-	  <li>third item</li>
-	</ol>
-</body>
-</html></xmp>
-			<p class="explanationNote">
-				<em>Note:</em>Notice that value of the attribute start appeared in double inverted commas.
-			</p>
-
-			<div class="explanationImage">
-				<img src="./images/page6/ordered_list_numbering.png">
-			</div>
-			<p class="explanationText">
-				Nesting can also be done using ordered lists. Also a combination of ordered and unordered lists can be used!
-			</p>
-			<p class="explanationNote">
-				<em>NOTE:</em>List styles can be changed using CSS, which you will be learning soon.
-			</p>
+		  	
 		  </div>
 		</div>
 
-		<div id="links" class="tabcontent">
-		  <h3 class="heading" id="linksHeading">Links</h3>
+		<div id="for-while" class="tabcontent">
+		  <h3 class="heading" id="linksHeading">For, While</h3>
 		  <div class="content">
-		    <p class="explanationText">
-		    	Different web pages are connected using links. They give us the ability to go to a different web page without each time entering its URL. This kind of links are  external links i.e. they help in connecting to external web pages.Links can also be internal which means that they will be linking the content within the same page. For example link to the top of the page or link to any specific content.
-		    	<br>
-		    	An anchor tag <b>a</b> is used to define a link. The destination of the link is mentioned using <b>href</b> attribute. Usage:
-		    </p>
-		    <div class="code">	
-<xmp><h2>A Great place to practice coding</h2>
-<p>
-    Take the daily challanges at
-    <a href="http://www.codingninjas.in/students/assignments">
-        Coding Ninjas.
-        <!-- clickable content for the link is mentioned here -->
-        <!-- any html element can be included here like image, gif, etc. -->
-    </a>
-</p>
-</xmp>
-		  	</div>
-
-			<p class="explanationText">
-				The link appears as 
-			</p>
-
-			<div class="htmlDisplay">
-				<div style="font-size:1.25em"><b>A Great place to practice coding</b></div>
-					<p>
-						Take the daily challanges at
-						<a href="http://www.codingninjas.in/students/assignments">Coding Ninjas.</a>
-					</p>
-			</div>
-			<p class="explanationText">
-				In the <b>href</b> attribute web address was mentioned in the above example, however it can contain address of a local file located on the computer:
-				<div class="code">
-					href="/home/myPC/Documents/test.html"
-				</div>
-			</p>
-			<p class="explanationText">
-				Example of a link within the page:
-				<div class="code">
-					<xmp><a href="#linksHeading">Go to top of the page</a></xmp>
-				</div>
-				<p class="explanationText"> 
-					In the <b>href</b> attribute, <em>linksHeading</em> is the id of the heading of this page. <em>id</em> of an html element is an attribute and it can have any value. While refering to an id, '#' is used in the begining of its name. Clicking on the link shown below will scroll you to the heading such that it is the first line of the display.
-				</p>
-				<div class="htmlDisplay">
-					<p>						
-						<a href="#linksHeading">Go to top of the page</a>
-					</p>
-				</div>
-			</p>
-
-
+		    
 
 		  </div>
 		</div>
 
-		<div id="images" class="tabcontent">
-		  <h3 class="heading">Images</h3>
+		<div id="functions" class="tabcontent">
+		  <h3 class="heading">Functions</h3>
 		  <div class="content">
-		  	<p class="explanationText">	
-				To add images in the html documents <b>img</b> tag is used. This tag is a self closing tag which means that it doesn’t contain the closing tag. The <b>src</b> attribute is used to mention the source of the image. The source of the image can be a local file or some it can be some url also.<br>
-				An important attribute is <b>alt</b>. It provides the alternate content for the image for the users who are unable to see the image (if they are visually impaired, for example). Also, if the image fails to load then the alternate content is shown.
-				<p class="explanationNote">
-					<em>Note: images with different extensions like .png, .jpeg can be used. Also gifs can be displayed using the <b>img</b> tag.</em>
-				</p>
-				An example:
-		  	</p>
-
-		  	<xmp class="code"><img src="images/logo.png" alt="Coding Ninjas image"></xmp>
-		  	<!-- path to the logo of Coding Ninjas -->
-			<p class="explanationText">
-				The image appears as
-				<div class="htmlDisplay">
-					<img src="images/logo.png" alt="Coding Ninjas image"></xmp>
-				</div>
-			</p>
-
+		  	
 
 		  </div>
 		</div>
 
-		<div id="tables" class="tabcontent">
-		  <h3 class="heading">Tables</h3>
+		<div id="array-vectors" class="tabcontent">
+		  <h3 class="heading">Array, Vectors</h3>
 		  <div class="content">
-		  <p class="explanationText">
-			Tables are used to show the tabular data. To achieve this many tags are used. All the table-data is enclosed within the <b>table</b> tags. After that <b>tr</b> tags enclose table rows. Each row contains a number of data enteries which are enclosed by <b>td</b> tags. <b>td</b> stands for table-data and <b>tr</b> for table row. Number of table-data  elements in a row are equal to the number of columns of that table. 
-		  </p>
-		  <xmp class="code"><table>
-    <tr>
-        <td>Row 1, cell 1</td>
-        <td>Row 1, cell 2</td>
-        <td>Row 1, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 2, cell 1</td>
-        <td>Row 2, cell 2</td>
-        <td>Row 2, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, cell 1</td>
-        <td>Row 3, cell 2</td>
-        <td>Row 3, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 4, cell 1</td>
-        <td>Row 4, cell 2</td>
-        <td>Row 4, cell 3</td>
-    </tr>
-</table></xmp>
-
-			<p class="explanationText">The table appears as</p>
-			<div class = "htmlDisplay">
-			<table>
-			    <tr>
-			        <td>Row 1, cell 1</td>
-			        <td>Row 1, cell 2</td>
-			        <td>Row 1, cell 3</td>
-			    </tr>
-			    <tr>
-			        <td>Row 2, cell 1</td>
-			        <td>Row 2, cell 2</td>
-			        <td>Row 2, cell 3</td>
-			    </tr>
-			    <tr>
-			        <td>Row 3, cell 1</td>
-			        <td>Row 3, cell 2</td>
-			        <td>Row 3, cell 3</td>
-			    </tr>
-			    <tr>
-			        <td>Row 4, cell 1</td>
-			        <td>Row 4, cell 2</td>
-			        <td>Row 4, cell 3</td>
-			    </tr>
-			</table
-				
-			</div>
-
-
-		  </div>
+		  
 		</div>
 	</div>
 
-		<div id="rowspan" class="tabcontent">
-		  <h3 class="heading">Table: Rowspan</h3>
+		<div id="objects" class="tabcontent">
+		  <h3 class="heading">Objects</h3>
 		  <div class="content">
-		  	<p class="explanationText">
-			  	To manage the layout of the the tables, two attributes are used. One is <b>rowspan</b> and other is <b>colspan</b>. <b>rowspan</b> is used to mention the number of rows that a particular cell will be occupying. This is done by using the attrtibute in the <b>td</b> tag.
-		  	</p>
-
-
-		  		<xmp class="code">
-<table border="1">
-    <tr>
-        <td>Row 1, cell 1</td>
-        <td>Row 1, cell 2</td>
-        <td>Row 1, cell 3</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Row 2, cell 1, and row 2, cell 2</td>
-        <td>Row 2, cell 2</td>
-        <td>Row 2, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, cell 2</td>
-        <td>Row 3, cell 3</td>
-    </tr>
-</table>
-	</xmp>
-
-		  	<p class="explanationText">
-		  		The output appears as:
-		  	</p>
-
-		  	<div class="output-window">
-				<table border="2">
-                    <tr>
-                        <td>Row 1, cell 1</td>
-                        <td>Row 1, cell 2</td>
-                        <td>Row 1, cell 3</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Row 2, cell 1, and row 2, cell 2</td>
-                        <td>Row 2, cell 2</td>
-                        <td>Row 2, cell 3</td>
-                    </tr>
-                    <tr>
-                        <td>Row 3, cell 2</td>
-                        <td>Row 3, cell 3</td>
-                    </tr>
-                </table>	
-		  	</div>
-
-
-
+		  
 		  </div>
 		</div>
 
-		<div id="colspan" class="tabcontent">
-		  <h3 class="heading">Table: Colspan</h3>
+		<div id="prototypes" class="tabcontent">
+		  <h3 class="heading">Prototypes</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">
-			  	Attribute <b>colspan</b> is used to mention the number of columns that a particular cell will be occupying. This is done by using the attrtibute in the <b>td</b> tag.
-			  	Both <b>colspan</b> and <b>rowpan</b> can be used in <b>th</b> tag (table-heading tag), which is used to enclose headings in tables.Example:
-		  	</p>
-
-
-		  		<xmp class="code">
-<table>
-    <tr>
-        <th>Column 1 heading</th>
-        <th colspan="2">Column_2_and_3_heading</th>
-        <!-- <th>Column 3 heading</th> -->
-    </tr>
-    <tr>
-        <td>Row 2, cell 1</td>
-        <td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, cell 1</td>
-        <td>Row 3, cell 2</td>
-        <td>Row 3, cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 4, cell 1</td>
-        <td>Row 4, cell 2</td>
-        <td>Row 4, cell 3</td>
-    </tr>
-</table>
-</xmp>
-
-		  	<p class="explanationText">
-		  		The output appears as:
-		  	</p>
-
-		  	<div class="output-window">
-				<table>
-				    <tr>
-				        <th>Column 1 heading</th>
-				        <th colspan="2">Column 2,3 heading</th>
-				        <!-- <th>Column 3 heading</th> -->
-				    </tr>
-				    <tr>
-				        <td>Row 2, cell 1</td>
-				        <td colspan="2">Row 2, cell 3</td>
-				    </tr>
-				    <tr>
-				        <td>Row 3, cell 1</td>
-				        <td>Row 3, cell 2</td>
-				        <td>Row 3, cell 3</td>
-				    </tr>
-				    <tr>
-				        <td>Row 4, cell 1</td>
-				        <td>Row 4, cell 2</td>
-				        <td>Row 4, cell 3</td>
-				    </tr>
-				</table>
-
-	
-		  	</div>
 		  </div>
 		</div>
 
 		<div id="forms" class="tabcontent">
 		  <h3 class="heading">Forms</h3>
 		  <div class="content">
-		  	<p class="explanationText">
-		  		HTML forms  are the main thing through which user can interact with the web site or application. Through forms, a user enters the data which is either processed by the browser itself(using Javascript) or goes to the server where it gets processed.       <br>
-				An HTML forms may contain a lot of elements like text fields (single line or multiline), select boxes, buttons, checkboxes, or radio buttons. Let us start with just a basic form without any elements:
-		  	</p>
-<xmp class="code"><form action="/address_to_handle_form" method="post">
-
-  </form>
-</xmp>
-			<p class="explanationText">
-				Since the form doesn't contain any element,currently, nothing will appear as output.
-			</p>
-			<p class="explanationNote">
-				<em>NOTE:</em>Notice the attributes <b>action</b> and <b>method</b>. We need to tell the form where it should send the data that is entered, this is done using <b>action</b> attribute. There are many methods to send data to the address mentioned. Most important ones are <em>get</em>, and <em>post</em>. Method <em>get</em> is used when privacy is not a concern and the data is small and the data entered in the form goes to the destination as a part of the address mentioned in the attribute, whereas the <em>post</em> is used to send data more securely.
-			</p>
-			<div class="explanationHeading"><b>Input</b> Tag</div>
-			<p class="explanationText">
-				It is the most important element of the forms. It can take various forms using the <b>type</b> attribute. Here are the examples:
-				<ul class="explanationNote">
-					<li>
-						&ltinput type="text"&gt or simply &ltinput&gt is a standard textbox. This can also have a value attribute, which sets the initial text in the textbox.
-					</li>
-					<li>
-						&ltinput type="password"&gt is similar to the textbox, but the characters typed in by the user will be hidden.
-					</li>
-					<li>
-						&ltinput type="checkbox"&gt is a checkbox, which can be toggled on and off by the user. This can also have a checked attribute (&ltinput type="checkbox" checked&gt - the attribute doesn’t require a value), and makes the initial state of the check box to be switched on, as it were.
-					</li>
-					<li>
-						&ltinput type="radio"&gt is similar to a checkbox, but the user can only select one radio button in a group. This can also have a checked attribute.
-					</li>
-					<li>
-						&ltinput type="submit"&gtis a button that when selected will submit the form. You can control the text that appears on the submit button with the value attribute, for example &ltinput type="submit" value="Ooo. Look. Text on a button. Wow"&gt.	
-					</li>
-				</ul>
-			</p>
-			<p class="explanationText">
-				These were the basics of forms, more will be coming in HTML forms section!!
-			</p>
-		  </div>
+		    </div>
 		</div>
 
 
@@ -705,35 +174,7 @@
 		  <h3 class="heading">CSS: Getting Started</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">
-		  	Cascading Style Sheets(CSS) is a stylesheet language used for the presentation of a document written in a markup language like HTML,XML.
-		  	It includes adding colors,fonts,layout to our HTML page.
-		  			  	CSS code looks like this:
-		  	</p>
-<xmp class="code">
-h1 {
-	font-family: monospace;
-}
-/*This is a comment in CSS*/
-h2 {
-	color: blue;
-}
-</xmp>
-		  	<p class="explanationText">It's HTML code is:</p>
-<xmp class="code">
-<h1>Welcome to Coding Ninjas!</h1>
-<h2>Where coding is a way of life..</h2>
-</xmp>	
-        <p class="explanationText">gives the output..</p>
-		<div class="output-window">
-		  	<h1 style="font-family: monospace;">Welcome to Coding Ninjas!</h1>
-		  	<br>
-			<h3 style="color:blue">Where coding is a way of life..</h3>
-		</div>
-		<p class="explanationText">
-		  	There are three ways of applying it <b>Inline</b>,<b>Internal</b> and <b>External</b>.
-		  	All these are discussed in the next sections.
-		</p>
+		  	
 	  </div>
 	</div>
 
@@ -741,28 +182,7 @@ h2 {
 		  <h3 class="heading">CSS: Inline</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">
-		  	Inline CSS is applied directly to our HTML code using the <b>style</b> attribute.
-		  	<br>
-		  	Here's the HTML code..
-		  	<xmp class="code">
-<p style="color:red">Inline CSS</p>
-		  	</xmp>
-		  		<p class="explanationText">Output Will be..</p>
-		  		<div class="output-window">
-		  		<p style="color:red">Inline CSS</p>
-		  		</div>
-		  		<p class="explanationText">also, multiple properties can be added to an element.</p>
-		  		<br>
-		  		<p class="explanationText">HTML code is..</p>
-		  		<xmp class="code">
-<p style="color:blue;font-size:40px">Inline CSS</p>
-		  		</xmp>
-		  		<p class="explanationText">Will output the following..</p>
-		  		<div class="output-window">
-		  		<p style="color:blue;font-size:40px">Inline CSS</p>
-		  		</div>
-		  	</p>
+		  	
 		  </div>
 		</div>
 
@@ -770,74 +190,14 @@ h2 {
 		  <h3 class="heading">CSS: External</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">An External CSS can be applied using a complete different CSS file.
-		  	<br>
-		  	This CSS file must be linked to our HTML file using the link tag.
-		  	Here's the HTML code..</p>
-		  	<xmp class="code">
-<head>
-<link rel="stylesheet" type="text/css" href="Style.css">
-</head>
-<body>
-<h1>External CSS</h1>
-<br>
-<p>This is External CSS.</p>
-</body>
-		  	</xmp>
-		  	<p class="explanationText">The external CSS file must be saved with <b>.css</b> extention, e.g.<b>"Style.css"</b>.Here's how our "Style.css" will look like..</p>
-		  	<xmp class="code">
-h3 {
-    color: navy;
-}
-
-p {
-   font-size: 30px;
-   color: green;
-}	  	</xmp>
-             <p class="explanationText">Output will be...</p>
-             <br>
-             <div class="output-window">
-             <h3 style="color:navy">External CSS</h3>
-             <br>
-             <p style="font-size:30px;color:green">This is External CSS.</p>
-             </div>
-		  </div>
+		  	 </div>
 		</div>
 
 		<div id="css-in-page" class="tabcontent">
 		  <h3 class="heading">CSS: In Page</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">An internal or in-page stylesheet holds the CSS code for the webpage in the head section of the particular file.
-		  	<br>
-		  	Internal CSS can be applied using <b>style</b> tag inside the <b>head</b> tag.
-		  	<br>
-		  	Here's the HTML code..</p>
-		  	<xmp class="code">
-<head>
- <style>
-    h1 {color:blue;}
-    h2 {color:red;}
-    p {color:green;}
- </style>
-</head>
-<body>
-	<h1>In-page CSS</h1>
-	<br>
-	<h2>OR</h2>
-	<br>
-	<p>INTERNAL CSS</p>
-</body>
-		  	</xmp>
-		  	<p class="explanationText">Output generated will be..</p>
-		  	<br>
-		  	<div class="output-window">
-		  	<h1 style="color: blue">In-page CSS</h1>
-		  	<br>
-	<h2 style="color:red">OR</h2>
-	<br>
-	<p style="color: green">INTERNAL CSS</p>
-          </div>
+		  	
 		  </div>
 		</div>
 
@@ -845,33 +205,7 @@ p {
 		  <h3 class="heading">Selectors, Properties, and Values</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">A selector points to the HTML element which we want to style.e.g..</p>
-		  	<xmp class="code">
-p{color: blue;}
-		  	</xmp>
-		  	<p class="explanationText">In the above code <b>p</b> is the selector.In other words a selector is nothing but a HTML tag use to style that element.
-		  	<br>
-		  	<br>
-		  	A <b>Property</b> refers to the various CSS styles that can be applied to a selector.For e.g.</p>
-		  	<xmp class="code">
-h3 {
-    font-size: 30px;
-    color: red;
-    font-family: Monospace,sans-serif;
-}		  	</xmp>
-            <p class="explanationText">font-size, color, font-family are the <b>properties</b> that are applied to the selector <b>h3</b> in the above code.  
-            <br>
-            <br>
-            A <b>value</b> is given to a property. <b>30px, red, Monospace, sans-serif</b> are the values given to the property in above code.
-            <br>
-            Properties and values are seprated by a <b>:</b> (colon).
-
-            <br>
-            <br>
-            In general..</p>
-		  	<div class="explanationImage">
-		  		<img src="./images/CSS_selector/selector.gif">
-		  	</div>
+		  	
 		  </div>
 		</div>
 
@@ -879,202 +213,7 @@ h3 {
 		  <h3 class="heading">Colors</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">The <b>color</b> property sets the foreground color of an element's text content, and its decorations.</p>
-
-
-          <div class="explanationHeading">
-  	Names.
-  </div>
-  <br>
-
-      <p class="explanationText">
-      	All modern browsers support the 140 different color names in CSS(just follow the link below):
-       <a href="https://developer.mozilla.org/en/docs/Web/CSS/color_value">https://developer.mozilla.org/en/docs/Web/CSS/color_value</a>
-      </p>
-      
-       <p class="explanationText">
-       You can apply any of these colors to a website or blog by using the relevant CSS code.</p>
-<ul class="explanationText">
-<li>To set an element's background color use <b>background-color</b> property.</li>
-<li>To set the text color, use <b>color</b> property.</li>
-<li>To set a border color, use <b>border-color</b> property.</li>
-</ul>
-
-   <xmp class="code">
-h1 {
-   background-color:aqua;
-   color:navy;
-}
-   </xmp>
-
-   <div class="output-window">
-  <h1 style="background-color: aqua;color: navy;">CSS COLORS.</h1>
-  </div>
-
-       <div class="explanationText">
-       	Here's a list of color values you can use with CSS.
-
-       <ul class="explanationText">
-       	<li><b>rgb()</b></li>
-       	<li><b>rgba()</b></li>
-       	<li><b>hsl()</b></li>
-       	<li><b>hsla()</b></li>
-       </ul>
-       </div>
-
-       <br>
-       <div class="explanationHeading">
-       	rgb()
-       </div>
-       <br>
-        
-        <div class="explanationText">
-        	<b>RGB</b> (which stands for <b>Red</b>, <b>Green</b>, <b>Blue</b>) is a color model in which red, green and blue light can be added together to reproduce a color.
-<br>
-The RGB value for <b>black</b> looks like this:
-
-<b>rgb(0, 0, 0)</b>.
-
-The RGB value for <b>white</b> looks like this:
-
-<b>rgb(255, 255, 255)</b>.
-<br>
-<br>
-Each of the three values can be provided as an integer or as a percentage. The integer value 255 corresponds with a percentage value of 100%. 
-        </div>
-        <xmp class="code">
-h1 {color: rgb(255,0,0);}
- 
-h2 {color: rgb(218,112,214);}
-
-h3 {color: rgb(160,82,45);}
-
-h4 {color: rgb(0,0,255);}
-</xmp>
-<p class="explanationText">will output..</p>
-      <div class="output-window">
-<h1 style="color: rgb(255,0,0)">I am red!</h1>
-<br>
-<h2 style="color: rgb(218,112,214)">I am orchid!</h2>
-<br>
-<h3 style="color: rgb(160,82,45)">I am sienna!</h3>
-<br>
-<h4 style="color: rgb(0,0,255)">I am blue!</h4>
-
-      </div>
-     <p class="explanationText">Also <b>rgb()</b> colors can also be represented by  using <b>CSS 6 Digit Hex Colors</b>.This CSS 6-digit hex color notation allows you to specify RGB colors using hexadecimal values.</p>
-     
-<xmp class="code">
-h1 {color: #ff0000;}
- 
-h2 {color: #da70d6;}
-
-h3 {color: #a0522d;}
-
-h4 {color: #0000ff;}
-</xmp>
-
-        <p class="explanationText">Will output same as the above.</p>
-        <p class="explanationNote"><b>Note</b>:The standard format of representing hex values is <b>#RRGGBB</b>
-         <br> 
-        <b>RR</b> represents the Red component of color.<br>
-        <b>GG</b> represents the Green component of color.<br>
-        <b>BB</b> represents the Blue component of color.	
-        </p>
-        <br>
-
-     <div class="explanationHeading">
-       	rgba()
-       </div>
-          <br>
-       <p class="explanationText">
-       	The CSS <b>rgba()</b> function is used to provide a color value with alpha transparency with the CSS. It allows you to specify an RGB color value with an alpha value to determine the color's transparency.
-       	<br>
-       	This alpha value lies from <b>0</b> to <b>1</b> from transparent to opaque.
-       </p>
-<xmp class="code">
-h3 {background-color: rgba(255, 0, 0, 0.3);}   
-
-h2 {background-color: rgba(0, 255, 0, 0.3);}   
-
-h1 {background-color: rgba(0, 0, 255, 1);}   
-</xmp>
-         <p class="explanationText">
-         	results in..
-         </p>
-
-        <div class="output-window">
-         <h3 style="background-color: rgba(255,0,0,0.3);">Red with opacity</h3><br>
-                  <h2 style="background-color: rgba(0,255,0,0.3);">green with opacity</h2><br>
-                           <h1 style="background-color: rgba(0,0,255,0.3);">blue with opacity</h1>
-         </div>
-        
-
-          <div class="explanationHeading">
-          	hsl()
-          </div>
-          <br>
-            <p class="explanationText">
-            	The CSS <b>hsl()</b> function can be used to provide a color value when using CSS. It allows you to specify a color value by specifying the hue, saturation, and light components of the color.
-            </p>
-
-            <ul class="explanationText">
-            	<li><b>Hue</b>: Any angle, from 0 to 360, taken from a typical <a href="http://css.prof.ninja/class2/colorwheel_hsl.jpg">color wheel</a>, where “0” (and “360”) is red, “120” is green and “240” is blue.</li>
-                
-                <li><b>Saturation</b> :It represents the amount of saturation in the color.For example, 100% is fully saturated (more colorful and intense), while 0 is a fully-unsaturated gray.
-
-</li>
-
-                <li><b>Lightness</b>:It represents the amount of light in the color. For lightness, 50% is the "normal" setting, while 100% is white and 0% is black.</li>
-            </ul>
-<xmp class="code">
-h4 {background-color: hsl(120, 100%, 50%);}  
-
-h3 {background-color: hsl(120, 100%, 75%);}  
-
-h2 {background-color: hsl(120, 100%, 25%);}  
-
-h1 {background-color: hsl(120, 60%, 70%);}   
-</xmp>
-
-           <p class="explanationText">gives us...</p>
-           <div class="output-window">
-           	<h4 style="background-color: hsl(120, 100%, 50%);">hsl green</h4> <br> 
-            <h3 style="background-color: hsl(120, 100%, 75%);">hsl lightgreen</h3><br>
-            <h2 style="background-color: hsl(120, 100%, 25%);">hsl dark green</h2><br>
-            <h1 style="background-color: hsl(120, 60%, 70%);">hsl pastel green</h1> 
-           </div>
-
-
-
-
-
-<div class="explanationHeading">
-          	hsla()
-          </div>
-          <br>
-            <p class="explanationText">
-            	Adding an alpha value to hsl gives us the option to add opacity to our CSS by using the <b>hsla()</b> function.
-            </p>
-<xmp class="code">
-h4 {background-color: hsla(120, 100%, 50%, 0.4);}  
-
-h3 {background-color: hsla(120, 100%, 75%, 0.4);}  
-
-h2 {background-color: hsla(120, 100%, 25%, 0.4);}  
-
-h1 {background-color: hsla(120, 60%,  70%, 0.4);}   
-</xmp>
-
-           <p class="explanationText">results in..</p>
-           <div class="output-window">
-           	<h4 style="background-color: hsla(120, 100%, 50%,0.4);">hsla green</h4> <br> 
-            <h3 style="background-color: hsla(120, 100%, 75%,0.4);">hsla lightgreen</h3><br>
-            <h2 style="background-color: hsla(120, 100%, 25%,0.4);">hsla dark green</h2><br>
-            <h1 style="background-color: hsla(120, 60%, 70%,0.4);">hsla pastel green</h1> 
-           </div>
-
-
+		  	
         </div>
 		</div>
 
@@ -1082,215 +221,7 @@ h1 {background-color: hsla(120, 60%,  70%, 0.4);}
 		  <h3 class="heading">Text</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">
-		  	Various Font changing properties can be applied to change the shape and size of the text in our CSS.</p>
-		  	<br>
-		    <div class="explanationHeading">
-		    	font-family
-		    </div>
-		    <br>
-		  	<!--<h2 style="font-size: 2em;font-weight: 300;font-size: 30px;color: grey">font-family</h2>-->
-
-		  	    <p class="explanationText">Changes the font to the specified style.Examples are Arial, sans-serif, monospace.</p>
 		  	
-		  	<xmp class="code">
-h1 { 
-    font-family: Arial,monospace,helvetica;
-}		 
- 	     </xmp>
- 	     <p class="explanationText">This code will output..</p>
- 	     <div class="output-window">
- 	     	<h1 style="font-family: Arial,monospace,helvetica">Arial,monospace,helvetica</h1>
- 	     </div>
- 	     <p class="explanationText">
- 	     <b>Arial, monospace, helvetica</b> represents the order in which the CSS will search for the fonts in user's computer (If one is not present then it will move to other).</p>
- 	     <div class="explanationNote">
- 	     <b>Note:</b> If the font is more than one word then it should be put in quotation marks like "Times New Roman".
- 	     </div>  
-		  <p class="explanationText">like..</p>
-<xmp class="code">
-h1 {
-    font-family: "Times New Roman", Times, serif;
-}
-</xmp>
-
-
-<div class="explanationHeading">
-           font-size 
-            </div>
-           <br>
-           <p class="explanationText">Changes the size of our font.Values can be applied in <b>em</b> or <b>px</b>.</p>
-           <xmp class="code">
-p {
-   font-size: 30px;	
-}
-
-p {
-   font-size: 3.2em;
-}
-           </xmp>
-           <p class="explanationText">will show..</p>
-           <div class="output-window">
-           <p style="font-size: 30px">px</p>
-           <br>
-           <p style="font-size: 3.2em">em</p>
-           </div>
- <div class="explanationHeading">
-		    	font-weight
-		    </div>
-		    <br><p class="explanationText">
-		    Specifies the weight of the font from lighter to bolder.Values can be  <b>bold, normal</b>, lighter(<b>100, 200, 300, 400</b>), normal(<b>500, 600, 700</b>), bolder(<b>800, 900</b>).</p>
-		    <xmp class="code">
-p {
-   font-weight: 100;
-}
-
-p {
-   font-weight: bold;
-}
-</xmp>
-		   <br>
-		   <div class="output-window">
-		   <p style="font-weight:100">font-weight: 100;</p>
-		   <br>
-		   <p style="font-weight:bold;">font-weight: bold;</p>
-           </div>
-           <br>
- <div class="explanationHeading">
-		    	font-style
-		    </div>
-		    <br>
-	<p class="explanationText">Changes the style from normal to italics or vice-versa.</p>
-	<xmp class="code">
-p {
-   font-style: italic;
-}	</xmp>
-
-    <p class="explanationText">gives...</p>
-    <div class="output-window">
-    <p style="font-style: italic;">Italics</p>
-    </div>
-    	<br>
-    	<div class="explanationHeading">
-    	text-decoration
-    	</div>
-    	<br><p class="explanationText">
-    	The text-decoration property specifies the decoration added to text.This property can be <b>underline</b>, <b>overline</b>, or <b>line-through</b>.
-</p>
-    	<xmp class="code">
-h3 {
-    text-decoration: overline;
-}
-
-h3 {
-    text-decoration: line-through;
-}
-
-h3 {
-    text-decoration: underline;
-}
-    	</xmp>
-   <p class="explanationText"> outputs..</p>
-    <div class="output-window">
-    <h3 style="text-decoration: overline;">overline</h3>
-    <br>
-    <h3 style="text-decoration: line-through;">line-through</h3>
-    <br>
-    <h3 style="text-decoration: underline;">underline</h3>	
-    </div>
-<br>
-        <div class="explanationHeading">
-        	text-transform
-        </div>
-        <br>
-        <p class="explanationText">Changes the case of text.It may be <b>uppercase</b>, <b>lowercase</b>, <b>capitalize</b> or <b>none</b>.</p>
-        
-        
-        <ul class="explanationText">
-
-        <li><b>lowercase</b> makes all of the letters in the selected text lowercase.</li>
-        <br>
-		<li><b>uppercase</b> makes all of the letters in the selected text uppercase.</li>
-		<br>
-		<li><b>capitalize</b> capitalizes the first letter of each word in the selected text.</li>
-		<br>
-		<li><b>none</b> leaves the text's case and capitalization exactly as it was entered.</li>
-		</ul>
-		
-		<br>
-		<xmp class="code">
-h1 {
-    text-transform: lowercase;
-}
-
-h1 {
-    text-transform: uppercase;
-}
-
-h1 {
-    text-transform: capitalize;
-}
-
-h1 {
-    text-transform: none;
-}
-		</xmp>
-          <p class="explanationText">outputs the following..</p>
-          <div class="output-window">
-          <h1 style="text-transform: lowercase;">lowercase</h1>
-          <br>
-          <h1 style="text-transform: uppercase;">uppercase</h1>
-          <br>
-          <h1 style="text-transform: capitalize;">capitalizes every first letter</h1>
-          <br>
-          <h1 style="text-transform: none;">none</h1>
-          </div>
-          <br>
-
-          <div class="explanationHeading">
-          Text-Spacing 	
-          </div>
-          <br>
-          <p class="explanationText">Includes following properties..</p>
-          
-            <ul class="explanationText">
-
-<li>The <b>letter-spacing</b> and <b>word-spacing</b> properties are for spacing between letters or words.</li><br>
-
-<li>The <b>line-height</b> property sets the height of the lines in an element, such as a paragraph, without adjusting the size of the font.</li><br>
-
-<li>The <b>text-align</b> property will align the text inside an element to <b>left</b>, <b>right</b>, <b>center</b>, or <b>justify</b>.</li><br>
-
-<li>The <b>text-indent</b> property will indent the first line of a paragraph.</li>
-</ul>
-<br>
-<p class="explanationText">here's the CSS code..</p>
-<xmp class="code">
-p {
-   letter-spacing: 0.5em;
-}
-
-p {
-   line-height: 1.5;
-}
-
-p {
-   word-spacing: 2em;
-}
-
-p {
-   text-align: center;
-}
-</xmp>
-<p class="explanationText">outputs..</p>
-      <div class="output-window">
-      <p style="letter-spacing: 0.5em">letterspacing in css</p>
-       <p style="line-height: 2.5em">line height in css</p>
-      <p style="word-spacing: 2em">word spacing in css</p>
-      <p style="text-align: center;">text alignment in css</p>
-      	
-      </div>
-
 </div>
 		</div>
 
@@ -1298,326 +229,7 @@ p {
 		  <h3 class="heading">Margin</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-           <p class="explanationText">
-           Three important properties control the space that surrounds each HTML element: <b>padding</b>, <b>margin</b>, and <b>border</b>.<br>
-
-<!--An element's <b>padding</b> controls the amount of space between the element and its <b>border</b>.-->
-           	An element's <b>margin</b> controls the amount of space between an element's <b>border</b> and surrounding elements.Consider the box below..</p>
-
-<!--                <style>
-  .injected-text {
-    margin-bottom: -2px;
-    text-align: center;
-  }
-
-  .box {
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    text-align: center;
-  }
-
-  .blue-box {
-    background-color: skyblue;
-    padding: 10px;
-    margin: 50px;
-  }
-  
-  .orange-box {
-    background-color: orange;
-    padding: 20px;
-    margin: 20px;
-  }
-
- /* .red-box {
-    background-color: red;
-    padding: 20px;
-    margin: 20px;
-  }
-  */
-</style>
-<div class="box blue-box">
-<h5 class="injected-text">MARGIN</h5>
-  <h5 class="box orange-box">PADDING</h5>
-  <!--<h5 class="box red-box">PADDING2</h5>-->
-<!--</div>-->
-
-        <!--<ul class="explanationText">
-        <li>In the above box the space b/w the  text element PADDING and the border of the <b>orange box</b> is the <b>padding</b> of the orange box.</li>
-        <li>
-        	The space around the border of the <b>orange box</b> and inside of the border of the blue box is the <b>margin</b> of the orange box.
-        </li>
-        </ul>
-
-        <p class="explanationText">CSS code looks like..</p>
-<xmp class="code">
-.injected-text {
-    margin-bottom: -2px;
-    text-align: center;
-  }
-
-  .box {
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    text-align: center;
-  }
-
-.orange-box {
-    background-color: orange;
-    padding: 20px;
-    margin: 20px;
-  }
-
-.blue-box {
-    background-color: skyblue;
-    padding: 10px;
-    margin: 50px;
-  }
-  
-</xmp>
-
-
-<p class="explanationText">
-<b>padding </b> can be applied individually to the <b>left</b>, <b>right</b>, <b>top</b>, and <b>bottom</b> like..
-</p>
-
-    <xmp class="code">
-.red-box {
-    border: 3px solid black;
-    background-color: red;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-  }
-    </xmp>
- <p class="explanationText">
- 	Will output..
- </p>   
-<div class="output-window">
-	 <p style="
-	 	border: 3px solid black; 
-    background-color: red;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px"
-  ><b>Padding</b></p>
-</div>
-
-
-<p class="explanationText">
-Also, <b>margin </b> can be applied individually to the <b>left</b>, <b>right</b>, <b>top</b>, and <b>bottom</b> like..
-</p>
-
-<xmp class="code">
-.green-box {
-    border: 3px solid black;
-    background-color: red;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-  }
-</xmp>
-<p class="explanationText">gives..</p>
-<div class="output-window">
-	<p style="
-	border: 3px solid black;
-    background-color: green;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-"><b>Margin</b></p>
-</div>
-
-
-<p class="explanationText">The values for <b>top</b>, <b>right</b>, <b>bottom</b>, and <b>left</b> can be written together like..</p>
-
-<xmp class="code">
-.green-box{
-    background-color: green;
-    margin-top: 40px 20px 20px 40px;
-}
-</xmp>
-
-<p class="explanationText">The same can be done for the red box as well..</p>
-<xmp class="code">
-.red-box{
-    background-color: red;
-    margin-top: 40px 20px 20px 40px;
-}
-</xmp>
-
-<p class="explanationText">Both the codes will output the same as above.</p>
-
-<p class="explanationNote"><b>Note</b>:The values  40px 20px 20px 40px represents the <b>clock-wise </b>order for <b>top</b>, <b>right</b>, <b>bottom</b>, and <b>left </b>respectively.</p>
-
-<p class="explanationText">We can also provide <b>-ve</b> values for both margin and padding.</p>
--->
-
-
-<!--
-                <style>
-  .injected-text {
-    margin-bottom: -2px;
-    text-align: center;
-  }
-
-  .box {
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    text-align: center;
-  }
-
-  .blue-box {
-    background-color: skyblue;
-    padding: 10px;
-    margin: 50px;
-  }
-  
-  .orange-box {
-    background-color: orange;
-    padding: 20px;
-    margin: 20px;
-  }
-
- /* .red-box {
-    background-color: red;
-    padding: 20px;
-    margin: 20px;
-  }
-  */
-</style>
-<div class="box blue-box">
-<h5 class="injected-text">MARGIN</h5>
-  <h5 class="box orange-box">PADDING</h5>
-  <!--<h5 class="box red-box">PADDING2</h5>-->
-<!--</div>-->
-
-<div class="output-window">
-<div style="border: 3px solid black;
- padding: 45px;
-  background-color: skyblue;
-  margin: 35px">
-  <div style="border: 3px solid black;
-  margin:5px;
-  padding:25px;
-  text-align: center;
-  background-color: orange"><h1>h1 element</h1></div>
-  </div>
-</div>
-<br>
-<p class="explanationText">CSS code is..</p>
-
-<xmp class="code">
-.blue-box{
-  border: 3px solid black;
- padding: 45px;
-  background-color: skyblue;
-  margin: 35px;
-}
-
-.orange-box{
-  border: 3px solid black;
-  margin:5px;
-  padding:25px;
-  text-align: center;
-  background-color: orange;
-}
-</xmp>
-
-<p class="explanationText">Now, let us change the margin of the <b>orange-box</b> to <b>25px</b>..</p>
-
-<xmp class="code">
-.orange-box{
-  border: 3px solid black;
-  margin:25px;
-  padding:25px;
-  text-align: center;
-  background-color: orange;
-}
-</xmp>
-<div class="output-window">
-<div style=" border: 3px solid black;
- padding: 45px;
-  background-color: skyblue;
-  margin: 35px">
-  <div style="  border: 3px solid black;
-  margin:25px;
-  padding:25px;
-  text-align: center;
-  background-color: orange"><h1>h1 element</h1></div>
-  </div>
-</div>
-<p class="explanationText">Now, we can see that the distance b/w the border of <b>orange-box</b> and the border of the <b>blue-box</b> has been increased just by increasing the margin of the <b>orange-box</b> to 25px.</p>
-
-<p class="explanationText">Also, we can add <b>-ve</b> margin values to our <b>orange box</b>, which will result the following..</p>
-
-<div class="output-window">
-<div style=" border: 3px solid black;
- padding: 45px;
-  background-color: skyblue;
-  margin: 35px">
-  <div style="  border: 3px solid black;
-  margin:-5px;
-  padding:25px;
-  text-align: center;
-  background-color: orange"><h1>h1 element</h1></div>
-  </div>
-</div>
-<p class="explanationText">CSS code is..</p>
-
-<xmp class="code">
-.orange-box{
-  border: 3px solid black;
-  margin:-5px;
-  padding:25px;
-  text-align: center;
-  background-color: orange;
-}
-
-</xmp>
-
-<p class="explanationText">It is clear from the above that the space around the border of the <b>orange-box</b> and inside the border of the <b>blue-box</b> has been "shrunk" from the previous size just by adding a <b>-ve </b>margin value of <b>5px</b> in our <b>orange-box</b>!</p>
-
-<p class="explanationText">We can also manipulate <b>top</b>, <b>right</b>, <b>bottom</b>, <b> left</b> of our <b>
-orange-box</b> individually..</p>
-
-<xmp class="code">
-.orange-box{
-  border: 3px solid black;
-  margin:5px 15px 25px 35px;
-  padding:25px;
-  text-align: center;
-  background-color: orange;
-</xmp>
-
-<p class="explanationText">This will result in...</p>
-<div class="output-window">
-<div style=" border: 3px solid black;
- padding: 45px;
-  background-color: skyblue;
-  margin: 35px">
-  <div style="  border: 3px solid black;
-  margin:5px 15px 25px 35px;
-  padding:25px;
-  text-align: center;
-  background-color: orange"><h1>h1 element</h1></div>
-  </div>
-</div>
-<p class="explanationText">It's pretty clear that the margin values <b>5px 15px 25px 35px </b>changes the space around the <b>orange-box</b> by <b>5px 15px 25px 35px</b> respectively!!</p>
-
-<p class="explanationNote"><b>Note:</b>The margin values <b>5px 15px 25px 35px</b> follows a <b>clock-wise</b> order from <b>top right bottom</b> and <b>left</b> respectively.</p>
-
-
-
-
-
-
+          
 		  </div>
 		</div>
 
@@ -1625,64 +237,7 @@ orange-box</b> individually..</p>
 		  <h3 class="heading">Padding</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">An element's <b>padding</b> controls the amount of space between the element and its border.</p>
-		  	<p class="explanationText">Consider the box below..</p>
-                <div class="output-window">
-              <div style="text-align: center;border: 3px solid black;background-color: cornflowerblue;margin:45px">
-              	<h1>This is the h1 element in CSSjjkhh</h1>
-              </div>
-              </div>
-
-              <p class="explanationText">CSS code is..</p>
-<xmp class="code">
-.blue-box {
-     text-align: center;
-     border: 3px solid black;
-     background-color: cornflowerblue;
-     margin: 45px;	
-}
-</xmp> 
-       <p class="explanationText">As we can see, there is no space b/w the <b>h1 element</b> and the <b>border</b> of the <b>blue-box</b> and it looks a little messy!!</p>
-
-        <p class="explanationText">just by adjusting the <b>padding</b> value to <b>25px </b>we get..</p>
-             <div class="output-window">
-             <div style="text-align: center;border: 3px solid black;background-color: cornflowerblue;margin:45px; padding: 25px">
-              	<h1>This is the h1 element in CSSjjkhh</h1>
-              </div>
-              </div>
-<xmp class="code">
-.blue-box {
-     text-align: center;
-     border: 3px solid black;
-     background-color: cornflowerblue;
-     margin: 45px;
-     padding: 25px;	
-}
-</xmp>
-
-<p class="explanationText">As we can see that the space b/w the <b>h1 element</b> and the space inside the border of <b>blue-box</b> has been increased by adjusting the padding value to <b>25px</b>!!</p>
-           <p class="explanationText">This space has been equally distributed around the <b>h1 element</b>..</p>
-        
-
-        <p class="explanationText">We can also change the padding value of <b>top</b>, <b>right</b>, <b>bottom</b> and <b>left</b> of the <b>h1 element</b> individually...</p>       
-<xmp class="code">
-.blue-box {
-     text-align: center;
-     border: 3px solid black;
-     background-color: cornflowerblue;
-     margin: 45px;
-     padding: 5px 15px 25px 35px;	
-}
-</xmp>
-<p class="explanationText">Will generate..</p>
-              <div class="output-window">
-             <div style="text-align: center;border: 3px solid black;background-color: cornflowerblue;margin:45px; padding: 5px 15px 25px 35px">
-              	<h1>This is the h1 element in CSSjjkhh</h1>
-              </div>
-               </div>
-              <p class="explanationText">The padding value changes to <b>5px 15px 25px 35px</b> from the <b>top</b>, <b>right</b>, <b>bottom</b>, and <b>left</b> respectively.</p>
-             <!-- <p class="explanationNote"><b>Note:</b>There's no <b>-ve </b>padding value can be given in CSS.</p>-->
-		 </div>
+		  	 </div>
 		</div>
 
 
@@ -1690,258 +245,14 @@ orange-box</b> individually..</p>
 		  <h3 class="heading">Border</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-           <p class="explanationText">   CSS borders have properties like <b>style</b>, <b>color</b> and <b>width</b>.For example, if we wanted to create a "teal" colored, 5 pixel border around an HTML element..</p>
-<xmp class="code">
-h1 {
-    border-color: teal;
-    border-width: 5px;
-    border-style: solid;
-    padding:5px;
-}
-</xmp>
-        <p class="explanationText">will output..</p>
-
-        <div class="output-window">
-        	<h1 style="border-color: teal;padding: 5px; border-width: 5px; border-style: solid">This is a border in CSS</h1>
-        </div>
-        <p class="explanationText">Also, <b>border-color</b>, <b>border-width</b>, <b>border-style</b> can be written together like.. </p>
-<xmp class="code">        
-h1 {
-    border:5px solid teal;
-}
-</xmp> 
-        <p class="explanationText">will output same as the above.</p> 
-
-		<p class="explanationText">CSS <b>border</b> can be styled in so many ways like <b>solid</b>, <b>dotted</b>, <b>dashed</b>..</p>  
-		<div class="output-window">
-<h1 style="border: 5px solid goldenrod; text-align:center; ">Solid Border</h1><br>
-<h2 style="border: 5px dotted black;text-align:center">Dotted Border</h2><br>
-<h3 style="border: 5px dashed green;text-align:center">Dashed Border</h3><br>
-</div>
-        <p class="explanationText">CSS code is..</p>
-        <xmp class="code">
-h1 {
-    border: 5px solid goldenrod;
-    text-align: center;
-}
- 
-h2 { 
-    border: 5px dotted black;
-    text-align: center;
- }
-
-h3 { 
-    border: 5px dashed green;
-    text-align: center;
-}
-   </xmp>
-
-        <p class="explanationText">There are more other ways of styling the borders in CSS like double, groove, ridge, inset and outset.But <b>solid</b>, <b>dotted</b>, and <b>dashed </b>are most commomly used.</p>
-
-        <p class="explanationText">Also we can apply <b>border-width</b>, <b>border-color</b>, <b>border-style</b> to the <b>top</b>, <b>bottom</b>, <b>left</b>, and <b>right</b> individually in an element like...</p>
-
-<xmp class="code">
-h1 {
-    border-bottom: 5px solid teal;
-    text-align: center;
-}
-
-h2 {
-    border-top-width:5px;
-    border-top-color:red;
-    border-top-style:dotted;
-    text-align: center;
-}
-</xmp>        
-
-        <p class="explanationText">
-        	This will look like..
-        </p>
-         
-         <div class="output-window">
-         	<h1 style=" border-bottom: 5px solid teal;
-    text-align: center;">BorderBottom</h1><br>
-         	<h1 style="border-top-style:dotted;border-top-width: 5px;border-top-color: goldenrod;
-    text-align: center;">BorderTop</h1>
-    
-         </div>
-
-
-
-		  </div>
+          	  </div>
 		</div>
 
 		<div id="border-radius" class="tabcontent">
 		  <h3 class="heading">Border Radius</h3>
 		  <div class="content">
 		  	<!-- Start writing from here -->
-		  	<p class="explanationText">Consider the box below..</p>
-             <div class="output-window">
-        	<div style="    	
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px"></div>
-        </div>  	
-        <p class="explanationText">CSS code is..</p>
-<xmp class="code">
-div {
-	background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px
-}
-</xmp>        
-		  	<p class="explanationText">The <b>border-radius</b> property is used to add rounded corners to an element.</p>
-		  	<p class="explanationText">look at the CSS code below..</p>
-<xmp class="code">
-div{
-    border-radius: 35px;
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px; 
-}
-</xmp>		
-        <p class="explanationText">This will output..</p>
-        <div class="output-window">
-        	<div style="border-radius: 35px;
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px"></div>
-        </div>  	
-            
-        <p class="explanationText">Note the corners are slightly "curved" around the edges. Pretty cool huh?!..Well that's one way to apply the <b>border-radius </b>property.</p>
-        <p class="explanationText">Also, there are <b>four-valued</b>, <b>three-valued</b>, <b>two-valued</b>, and <b>one-valued</b> border-radius properties which can be specified individually according to our need.</p>
-        
-        <p class="explanationText">Consider the following..</p>
-<xmp class="code">
-div {
-    border-radius: 25px 60px 40px 15px; 
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px; 
-}
-</xmp>
-<p class="explanationText">border-radius: <b>25px 60px 40px 15px</b>; is a <b>four-valued</b> CSS border-radius property which applies individually to the <b>top-left</b>, <b>top-right</b>, <b>bottom-right</b>, and <b>bottom-left</b> respectively..</p>
-<div class="output-window">
-	<div style="border-radius: 25px 60px 40px 15px; 
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px;"></div>
-</div>
-<br>
-<xmp class="code">
- div { 
-     border-radius: 25px 60px 40px;
-     background: #008080;
-     padding: 20px; 
-     width: 200px;
-     height: 150px; 
-}
-</xmp>
-
-<p class="explanationText">border-radius: <b>25px 60px 40px</b>; is a <b>three-valued</b> CSS border-radius property which applies to the <b>top-left</b>(25px), <b>top-right</b>(60px), <b>bottom-left</b>(60px), and <b>bottom-right</b>(40px) respectively..</p>
-
-<div class="output-window">
-	<div style="border-radius: 25px 60px 40px; 
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px;"></div>
-</div>
-<br>
-<xmp class="code">
-div {
-    border-radius: 25px 60px;
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px; 
-}
-</xmp>
-
-<p class="explanationText">border-radius: <b>25px 60px</b>; is a <b>two-valued</b> CSS border-radius property which applies to the <b>top-left</b>(25px), <b>bottom-right</b>(25px), <b>bottom-left</b>(60px), and <b>top-right</b>(60px) respectively..</p>
-
-<div class="output-window">
-	<div style="border-radius: 25px 60px; 
-    background: #008080;
-    padding: 20px; 
-    width: 200px;
-    height: 150px;"></div>
-</div>
-
-
-        <p class="explanationNote"><b>Note</b>:These border-radius properties can also be applied another way using <b>border-top-left-radius</b>, <b>border-top-right-radius</b>, <b>border-bottom-left-radius</b>, and <b>border-bottom-right-radius</b>.</p>
-
-        <p class="explanationText">You may also specify the radiuses in which the corner is rounded by. In other words, the rounding doesn't have to be perfectly circular, it can be elliptical. This is done using a slash ("/") between two values.</p>
-<xmp class="code">
-div {
-    border-radius: 10px/30px; /* horizontal radius / vertical radius */
-    background: teal;
-    width:20%;
-    height:20%;
-    padding:40px;
-}
-
-div {
-    border-radius: 30px/10px; /* horizontal radius / vertical radius */
-    background: teal;
-    width:20%;
-    height:20%;
-    padding:40px;
-}
-</xmp>
-
-
-<div style="display: flex;justify-content: space-around;" class="output-window">
-         <div style="
-  border-radius: 10px/30px; /* horizontal radius / vertical radius */
-background: teal;
-  width:20%;
-  height:20%;
-  padding:40px"></div>
-
-<div style="
-  border-radius: 30px/10px; /* horizontal radius / vertical radius */
-  background: teal;
-  width:20%;
-  height:20%;
-  padding:40px;">	
-</div>
-
-</div>
-         
-       <p class="explanationText">Some applications of <b>border-radius</b> property are given below..</p>
-<div style="display: flex;justify-content: space-around">
-        <div style="border: dotted;
-        width: 30%;
-  border-width: 10px 4px;
-  border-radius: 10px 40px;text-align: center;background-color: beige;">border: dotted;<br>
-  border-width: 10px 4px;<br>
-  border-radius: 10px 40px;<br>
-  text-align: center;<br>background-color: beige;<br>width: 30%;</div>
-
-
-        <div style="border: dashed;
- width: 30%;
-  border-width: 2px 4px;
-  border-radius: 40px;text-align: center;background-color: bisque">border: dashed;<br>
-  border-width: 2px 4px;<br>
-  border-radius: 40px;<br>
-  background-color: bisque<br>text-align:center<br>width: 30%;;
-        	</div>
-        <div style="
-        width: 30%;
-  border-radius: 40px 10px;background-color: cornflowerblue;text-align: center;">
-        	border-radius: 40px 10px;<br>
-        	background-color:cornflowerblue;<br>
-        	text-align: center;<br>width: 30%;
-        </div>
-</div>
+		  
 		  </div>
 		</div>
 
@@ -1969,50 +280,7 @@ background: teal;
 		<div id="description-lists" class="tabcontent">
 		  <h3 class="heading">Description Lists</h3>
 		  <div class="content">
-		  	<p class="explanationText">
-		  		Description lists are very specific in use as compared to ordered and unordered lists and hence are very less used. But whenever, a structure like a list of terms and their description is required, the description lists are the the perfect elements. The description lists are made for that purpose only!! They are also used for holding metadata(metadata is the data that contains information about the content of the website, it helps the search engines and web-crawlers to find the relevant content).
-		  		<br><br>
-		  		The description lists are enclosed in <b>&ltdl&gt</b> and <b>&lt/dl&gt</b> tags.The description terms are held by <b>&ltdt&gt</b> and <b>&lt/dt&gt</b>. And the description data by <b>&ltdd&gt</b> and <b>&lt/dd&gt</b>
-		  	</p>
-
-<xmp class = "code"><dl>
-    <dt>HTML</dt>
-    <dd>
-    	Abbreviation for HyperText Markup Language 
-        - a language used to make web pages.
-    </dd>
-    <dt>CSS</dt>
-    <dd>
-    	Abbreviation for Cascading Style Sheet.
-    </dd>
-    <dd>
-    	Used to beautify HTML content.
-	</dd>
-
-    <dt>Javascript</dt>
-    <dd>
-    	Used to add logics to HTML and CSS content and to control them.
-    </dd>
-</dl></xmp>
-			<p class="explanationText">
-				It appears as:
-			</p>
-			<div class='output-window'>
-				<dl>
-				    <dt>HTML</dt>
-				    <dd style="-webkit-margin-start: 40px;">Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
-
-				    <dt>CSS</dt>
-				    <dd style="-webkit-margin-start: 40px;">Abbreviation for Cascading Style Sheet.</dd>
-				    <dd style="-webkit-margin-start: 40px;">Used to beautify HTML content.</dd>
-
-				    <dt>Javascript</dt>
-				    <dd style="-webkit-margin-start: 40px;">Used to add logics to HTML and CSS content and to control them</dd>
-				</dl>
-			</div>
-
-
-		  </div>
+		  		  </div>
 		</div>
 
 		<div id="sections" class="tabcontent">
@@ -2027,110 +295,7 @@ background: teal;
 		  <div class="content">
 		  	<!-- Start writing from here -->
 
-         <p class="explanationText">We can't create our own HTML tags those are pretty standard!.But the intention behind it can be fulfilled easily just by using <b>class</b> and <b>id</b> selectors.</p>
-
-          <p class="explanationHeading">Class Selector</p><br>
-          <p class="explanationText">The class selector is used to select a group of elements belongs to a same class like..</p>
-<xmp class="code">
-<p class="red">I am red1</p>
-<p class="blue">I am blue1</p>
-<p class="red">I am red2</p>
-<p class="blue">I am blue2</p>
-
-</xmp>
-
-        <p class="explanationText">Let's suppose if we want to give a red color to the elements that falls under the <b>red</b> class and the color blue to the elements that falls under the <b>blue</b> class this can be done by using class selector..</p>
-          
-<xmp class="code">
-.red{
-	color:red;
-}
-
-.blue{
-	color:blue;
-}
-</xmp>
-         <p class="explanationText">This will generate..</p>
-         <div class="output-window">
-         	<p style="color: red">I am red1</p><br>
-         	<p style="color: blue">I am blue1</p><br>
-         	<p style="color: red">I am red2</p><br>
-         	<p style="color: blue">I am blue2</p>
-         </div>
-      
-        <p class="explanationText">The <b>.</b> is called as the <b>class</b> selector and is used to select the elements that falls under the same class.</p>
-
-
-        <p class="explanationHeading">ID Selectors</p><br>
-
-        <p class="explanationText">The class selector selects a group of elements belongs to the same class..On the other hand the <b>ID selector</b> is much more specific.It is used to select those elements having a specific id..</p>
-
-<xmp class="code">
-<p id="one">This is id one!</p>
-<p id="two">This is id two!</p>
-<p id="three">This is id three!</p>
-<p id="four">This is id four!</p>
-</xmp>
-
-
-        <p class="explanationText">If we want to change the font of the element that belongs to the id <b>one</b>, change the color of element that belongs to id <b>two</b>,change the background-color of element to green that belongs to id <b>three</b> and change the size of the element that belongs to an id of <b>four</b>..</p>
-
-<xmp class="code">
-#one {
-     font-family: monospace,Arial;	
-}
-
-#two {
-	 background-color: teal;
-}
-
-#three {
-	   color: green;
-}
-
-#four {
-	  font-size: 30px;
-}
-</xmp>             
-
-        <p class="explanationText">This will generate..</p>
-        <div class="output-window">
-        <p style="font-family: monospace,Arial;">This is id one!</p><br>
-        <p style="background-color: teal">This is id two!</p><br>
-        <p style="color: green;">This is id three!</p><br>
-        <p style="font-size: 30px;">This is id four!</p>  	
-        </div>
-
-      <p class="explanationText">Also known as the <b>id selector</b> the <b>#</b> symbol is used to select an element that belongs to a particular id.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		  </div>
+          </div>
 		</div>
 
 		<div id="grouping-and-nesting" class="tabcontent">
@@ -2143,193 +308,19 @@ background: teal;
 		<div id="pseudo-classes" class="tabcontent">
 		  <h3 class="heading">Pseudo Classes</h3>
 		  <div class="content">
-		  	<p class="explanationText">
-		  		As the name specifies they are not real CSS classes, but are used to select the CSS class in a specific state! Like when you want a class to behave differently when hover(changing the color of an element while hovering or adding a shadow it) pseudo classes are used.
-		  	</p>
-		  	<p class="explanationText">
-		  		Syntax for using pseudo-classes:
-<xmp class="code">selector:pseudo-class {
-  <!-- all the properties that you want to change for this state of the 
-  class will come here-->
-  property: value;
-}</xmp>
-		  	</p>
-		  	<p class="explanationText">
-		  		For adding a shadow to all paragraphs when hovered the pseudo class is used as follows:
-<xmp class="code">.p:hover{
-	box-shadow: 2px 4px 6px 8px lightgrey;
-}</xmp>
-				<p class="explanationText">
-					Try hovering on the paragraphs below:
-				</p>
-				<div class="output-window">
-					<div id="examplePara1">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<br>
-					<p id="examplePara1">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-					</p>
-				</div>
-				<p class="explanationText">
-					<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Index_of_standard_pseudo-classes" target="_blank"> Click here for more types of pseudo-classes</a>
-				</p>
-		  	</p>		  
-		  </div>
-		</div>
-
-		<div id="pseudo-elements" class="tabcontent">
-		  <h3 class="heading">Pseudo Elements</h3>
-		  <div class="content">
-		  <p class="explanationText">
-			PSEUDO-ELEMENTS are used to address sub-parts of elements. They allow us to select specific parts of an element and set their properties. In other words they allow logical elements to be defined which do not explicitly exist in the HTML document but are a part of some other element like the first line of a paragraph, last letter .
-		  </p>
-		  <p class="explanationText">
-		  		Syntax for using pseudo-classes:
-<xmp class="code">selector::pseudo-element {
-    <!-- notice that double semi-colons are used above -->
-    property: value;
-}</xmp>
-		    </p>
-		    <p>
-		    	Example syntax for changing the size of the first letter of a paragraph:
-<xmp class="code">.p::first-letter{
-    font-size:20px;
-}</xmp>
-		    </p>
-		    <p class = "explanationText">
-		    	The above thing appears as
-		    	<div class="output-window">
-					<div id="examplePara2">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</div>
-					<br>
-					<p id="examplePara2">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-					</p>
-				</div>
-		    </p>
-		    <p class="explanationText">
-		    	<a href="https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-elements#All_pseudo-elements" target="_blank">All pseudo-elements and their details can be found here</a>
-		    </p>
-		  </div>
+		   </div>
 		</div>
 
 		<div id="shorthand-properties" class="tabcontent">
 		  <h3 class="heading">Shorthand Properties</h3>
 		  <div class="content">
-		  	<p class="explanationText">
-		  		
-			  	Shorthand properties are used to mention many CSS properties simultaneously. Using shorthand properties makes the code more readable and easy to maintain.
-				<br>
-				Shorthand properties are used for define properties of an element that are related to same kind of thing. For example: property <b>padding</b> alone can be used to mention the <b>padding-top</b>, <b>padding-right</b>, <b>padding-bottom</b>, <b>padding-left</b>.
-				<br>
-				For example: 
-			</p>
-<xmp class="code">div {
-    padding: 1px 5px 10px 20px;
-}</xmp>
-				<p class="explanationText">
-					Is equivalent to:
-				</p>
-<xmp class="code">div {
-    padding-top: 1px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-}</xmp>
-			<p class="explanationNote">
-				<em>NOTE:</em> The value which is not specified while using shorthands is set to its initial value. This is a tricky thing, if the property was specified earlier, it would be <b>overridden</b> to the its default.
-			</p>
-			<p class="explanationText">
-				Suppose while using <b>padding</b> shorthand, if only one value is mentioned, then, it would be set for all sides(top, right, bottom and left), if two values are mentioned then the first one is for top and bottom and the second one is for right and left. The same thing holds while using <b>margin</b>.
-				<br>
-
-			</p>
-			<div class="explanationText">
-				Usage for borders:
-			</div>
-			<p class="explanationText">
-<xmp class="code">p {
-    border: 1px red solid;
-}</xmp>			
-				<p class="explanationText">
-					<b>border-width</b>, <b>border-color</b>, and <b>border-style</b> are mentioned using the above shorthand.
-				</p>
-			</p>
-
-
-			<div class="explanationText">
-				Usage for fonts:
-			</div>
-			<p class="explanationText">
-<xmp class="code">p {
-    font: italic bold 12px/2 courier;
-}</xmp>			
-				<p class="explanationText">
-					This combines <b>font-style</b>, <b>font-weight</b>, <b>font-size</b>, <b>line-height</b>, and <b>font-family</b>.
-				</p>
-			</p>
-
-			<div class="explanationText">
-				Usage for background:
-			</div>
-			<p class="explanationText">
-<xmp class="code">p {
-    background: #000 url(images/bg.gif) no-repeat top right;
-}</xmp>			
-			</p>
-			<p class="explanationText">
-				This was the shorthand for 
-<xmp class="code">p {
-    background-color: #000;
-    background-image: url(images/bg.gif);
-    /*A web address can also be given in the url*/
-    background-repeat: no-repeat;
-    background-position: top right;
-}</xmp>
-			</p>
 		  </div>
 		</div>
 
 		<div id="background-images" class="tabcontent">
 		  <h3 class="heading">Background Images</h3>
 		  <div class="content">
-		  	<p class="explanationText">
-		  		The CSS <b>backgroud-image</b> property is used to set the background image for an element. It can also be mentioned as the shorthand property of the background image as mentioned in the previous section. They are used in much different way then normal HTML <b>img</b> tag.
-		  		<br>
-		  		<br>
-		  		The very important task accomplished using the background-image is known as image-spriting. Suppose you want to show flags of three countries Canada, USA, and Mexico in three different places in a web page. Instead of sending these three as different images, one big image containing all the three images in its sub-parts is made and is sent to the browser. Now the places at which the flags are to be shown, are made to have the same image-background. Like this:
-		  	</p>
-
-<xmp class="code">.flags-canada, .flags-mexico, .flags-usa {
-  background-image: url('../images/flags.png');
-  background-repeat: no-repeat;
-}</xmp>		
-			<p class="explanationText">
-				Now, at all three places, <b>background-position</b> is mentioned so as to include the appropraite part of the background like this:
-
-<xmp class="code">.flags-canada {
-  height: 128px;
-  background-position: -5px -5px;
-}
-
-.flags-usa {
-  height: 135px;
-  background-position: -5px -143px;
-}
-
-.flags-mexico {
-  height: 147px;
-  background-position: -5px -288px;
-}</xmp>
-			</p>
-
-			<p class="explanationText">
-				The benefit of this is that all the images are fetched using single http request which is far more better than many request fetching small small images.
-			</p>
-
- 
+		 
 		  </div>
 		</div>
 
@@ -2399,12 +390,7 @@ background: teal;
 		<div id="background" class="tabcontent">
 		  <h3 class="heading">Background</h3>
 		  <div class="content">
-		  <p class="explanationText">
-		  	Before reading this make sure you have read the <b>shorthand </b> section and the <b>background-image</b> sections 
-		  </p>
-
-
-
+		 
 
 
 
@@ -2430,100 +416,7 @@ background: teal;
 		<div id="media-queries" class="tabcontent">
 		  <h3 class="heading">Media Queries</h3>
 		  <div class="content">
-			<p class="explanationText">
-				Till now, we used CSS to style our HTML content, but its scope is not limited to that. CSS can also be used to write blocks of code that are targeted to specific screen sizes. Earlier, separate HTML and CSS was written for viewing the websites on mobiles, tablets, very-large screens etc. But now, using the <b>media queries</b> the screen size can be found out. CSS blocks are written for different ranges of screen sizes to change only the appearance of desired content.
-			</p>
-			<p class = "explanationText">
-				Basically, rather than finding out what device is being used, the capabilities of the device are looked at. Mainly, we will look at the following things:
-				<ul class = "explanationList">
-					<li>height and width of the device</li>
-					<li>height and width of the browser</li>
-					<li>screen resolution</li>
-					<li>orientation of the device (for mobile phones and tablets; portrait or landscape)</li>
-				</ul>  
-			</p>
-			<p class="explanationText">
-				The syntax is as follows:
-<xmp class="code"><!-- CSS media query on a link element in the HTML code-->
-<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
-
-
-<!-- CSS media query within a stylesheet -->
-<style>
-@media (max-width: 600px) {
-  .facet_sidebar {
-    display: none;
-  }
-}
-</style></xmp>
-			</p>
-			<p class="explanationText">
-				After the <b>@media</b> keyword, there are expressions which simplify to true or false and accordingly the content within the block of the <b>media query</b> will be applied to the HTML.
-				<b>media queries </b>may contain a <b>media type</b> which limits content for different kind of devices. List of main <b>media types</b>:
-				<div>
-					<dl class="explanationText">
-						<dt><b>all</b></dt>
-						<dd style="-webkit-margin-start: 40px;">Suitable for all devices.</dd>
-						
-						<dt><b>print</b></dt>
-						<dd style="-webkit-margin-start: 40px;">This media type will return true when the the content is viewed in the print mode, i.e. the preview of the content that will be printed</dd>
-
-						<dt><b>screen</b></dt>
-						<dd style="-webkit-margin-start: 40px;">Intended primarily for color computer screens.</dd>
-
-						<dt><b>speech</b></dt>
-						<dd style="-webkit-margin-start: 40px;">Intended for speech synthesizers.</dd>
-					</dl>
-				</div> 
-			</p>
-			<div class="explanationHeading">
-				Logical operators
-			</div>
-			<p class="explanationText">
-				Logical operators like <b>not</b>, <b>and</b> and <b>only</b> can be used to generate desired media query. Also parenthesis can be used to hold the queries. The and operator is used for combining multiple media features together into a single media query, requiring each chained feature to return true in order for the query to be true. The not operator is used to negate an entire media query. The only operator is used to apply a style only if the entire query matches, useful for preventing older browsers from applying selected styles. If you use the not or only operators, you must specify an explicit <b>media type</b>. 
-				<br>
-				Comma-separated lists behave like the logical operator <b>or</b> when used in media queries. When using a comma-separated list of media queries, if any of the media queries returns true, the styles or style sheets get applied. Each media query in a comma-separated list is treated as an individual query, and any operator applied to one media query does not affect the others.
-			</p>
-
-		    <p class="explanationText">
-		      when we want to target min-width: 700px and orientation: landscape:
-<xmp class="code">@media (min-width: 700px) {
-    /*similarly max-width can also be used*/
-    /*CSS code*/
-}</xmp>
-		    </p>
-
-		    <div class="explanationHeading">
-				Usage of <b>not</b> keyword
-		    </div>
-		    <p class="explanationText">
-		    	It applies to the whole query and returns true only if the whole query returns false. In comma separated query it will negate only the media query it is applied to. The not keyword cannot be used to negate an individual feature query. Only an entire media query should be mentioned. Basically,  after mentioning <b>not</b> keyword, media type must be mentioned.
-		    </p>
-		    <p class="explanationText">
-		    	For example, the not is evaluated last in the following query:
-<xmp class="code">@media not all and (max-width: 800px) { ... }</xmp>
-		    </p>
-		    <p class="explanationText">
-		    	Is evaluated as:
-<xmp class="code">@media not all and (max-width: 800px) { ... }</xmp>
-		    </p>
-		    <p class="explanationText">
-		    	In comma separated list:
-<xmp class="code">@media screen and (color),not print and (color) { ... }</xmp>
-		    </p>
-		    <p class="explanationNote">
-				<em>NOTE:</em>Here <b>not</b> will be evaluated only with the second query (i.e. the one after the comma), and notice that media type is mentioned(media type is print) otherwise the syntax would be invalid!!
-		    </p>
-		    <div class="explanationHeading">
-				Usage of <b>only</b> keyword
-		    </div>
-		    <p class="explanationText">
-		    	The only keyword prevents older browsers that do not support media queries with media features from applying the given styles:
-<xmp class="code"><link rel="stylesheet" media="only screen and (color)" href="example.css"
- /></xmp>
-		    </p>
-
-
+		
 		</div>
 	</div>
 </body>
