@@ -26,17 +26,6 @@
 		  <li onclick="openPage(event, 'prototypes')"><a href="javascript:void(0)" class="tablinks">Prototypes</a></li>
 		</ul>
 
-
-		<!-- <div id="default" class="default-page">
-		  <h3>Getting Started With</h3>
-		  <h3 id="hidden-heading">HTML and CSS</h3>
-		  <img src="images/html.jpg">
-		  <p>powered by</p>
-		   <a href="http://www.codingninjas.in/"><img src="images/logo.png"></a><br><br>
-		  <a id="jump-to-intro" onclick="openPage(event, 'introduction')">Click here to begin!</a>
-		</div> -->
-
-
 		<div id="default" class="default-page">
 			<h3>Getting Started With</h3>
 			<h3 id="hidden-heading">JavaScript</h3>
@@ -51,6 +40,36 @@
 			<h3 class="heading">Introduction</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+				<p class = "explanationText">
+					<b>JavaScript</b> is a light-weight, cross-platform, object-oriented language. Unlike C++ and Java, JavaScript is not a compiled language. It is an interpretted language like python, which means the JS code is executed line by line and if any error shows up, the interpretter stops there. JS is used for providing the control of HTML and CSS to the browser.
+				</p>
+				<p class="explanationText">
+					JS code can be interpretted on google-chrome or mozilla-firefox. For this tutorial, Google-chrome or Chromium-browser is preffered. Just press <kbd>ctrl+shit+i</kbd> and then go to <kbd>console</kbd> tab. You can either execute JS code line by line here or you can write the JS code in your favourite editor and then paste it here in the console. Now its time for the <em>hello-world</em> ritual. To print anything in the console, the syntax is: 
+				</p>
+				<div class="code">
+					console.log("Hello, World!!");
+				</div>
+				<p class="explanationText">
+					Also checkout the syntax below. It is used to create alerts.
+				</p>
+				<div class="code">
+					alert("Message that you want to display");
+				</div>
+				<p class="explanationText">
+					By now you might have noticed <code><b>undefined</b></code> that gets printed on the console after every command. The console always prints the whatever the last command returns. The <code><b>print</b></code> and <code><b>alert</b></code> functions don't return anything, so,  <code><b>undefined</b></code> is printed.
+				</p>
+
+				<h3 class="explanationHeading">
+					Including javascript in a web page
+				</h3>
+				<p class="explanationText">
+					The tag <code><b>script</b></code> is used for including JS within a web page.
+				</p>
+<xmp class="code"><script src="/path_to_file/file.js" type="text/javascript"></script></xmp>
+				<p class="explanationText">
+					For including the JS inside the HTML document, the JS code must be enclosed within the <code><b>script</b></code> tags and the <code><b>src</b></code> attribute should not be mentioned. 
+				</p>
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
