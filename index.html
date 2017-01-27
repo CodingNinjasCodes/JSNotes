@@ -321,7 +321,24 @@ for (var j = 1; j <= i; j++) {
 "**"
 "***"
 "****"
-"*****"</xmp>                     
+"*****"</xmp>     
+
+
+        <p class="explanationHeading">The "for-in" loop</p>   
+        <p class="explanationText">The <b>for-in </b>loop iterates through the properties of an <b>object</b>.</p>
+<xmp class="code">var iceCream = {name:"Vadilal", flavour:"ButterScotch", type:"Cornetto"}; 
+var taste = "";
+var x;
+for (x in iceCream) {
+    taste += iceCream[x]+ " ";
+}
+console.log(taste);</xmp>
+        <p class="explanationText">on console..</p>
+<xmp class="code">"Vadilal ButterScotch Cornetto "</xmp> 
+<p class="explanationText"><b>Vadilal ButterScotch Cornetto</b> are the properties of the <b>iceCream </b>object.</p> 
+<p class="explanationText">Javascript <b>objects </b>will be discussed in the later section.</p>       
+
+
 
             <p class="explanationHeading">The "While" loop</p>
             <p class="explanationText">The <b>while</b> loop works until a condition returns false.</p>
@@ -338,12 +355,31 @@ i--;  //decrement condition
 "While loop prints: 3"
 "While loop prints: 2"
 "While loop prints: 1"</xmp>            
+  
 
+            <p class="explanationHeading">The "Do-while" loop</p>  
+<xmp class="code">var test=" ";
+var i=0;
+do {
+    test += "Do-While prints " + i+'\n';
+    i++;
+}
+while (i < 5);
 
+console.log(test);</xmp>
 
-
-
-
+            <p class="explanationText">on console..</p>
+<xmp class="code">" Do-While prints 0
+Do-While prints 1
+Do-While prints 2
+Do-While prints 3
+Do-While prints 4
+"</xmp>            
+            <p class="explanationText">in general..</p>
+<xmp class="code">do
+   statement
+while (condition);
+</xmp>
 
 
 
