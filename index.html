@@ -26,6 +26,7 @@
 		  <li onclick="openPage(event, 'prototypes')"><a href="javascript:void(0)" class="tablinks">Prototypes</a></li>
 		</ul>
 
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css">
 
 		<!-- <div id="default" class="default-page">
 		  <h3>Getting Started With</h3>
@@ -85,6 +86,166 @@
 			<h3 class="heading">Operators</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+                <p class="explanationHeading">Arithmetic</p>
+                <p class="explanationText">Javascript supports basic arithmetic operations like Addition <b>(+)</b>,subtraction <b>(-)</b>,multiplication <b>(*)</b>, division <b>(/)</b> and modulus <b>(%)</b>.</p>   
+<xmp class="code">console.log(13+12);
+console.log(13-12);
+console.log(5*3);
+console.log(16/4);
+console.log(15%4);
+</xmp>
+            <p class="explanationText">on console..</p>
+<xmp class="code">-> 25
+-> 1
+-> 15
+-> 4
+-> 3
+</xmp>            
+            <p class="explanationHeading">Assignment</p>
+            <p class="explanationText">The Assignment operator <b>=</b> assigns a particular value to a variable.</p>
+<xmp class="code">var x=3; //3 is assigned to x
+</xmp>    
+       <p class="explanationText"><b>Addition</b> assignment:</p>        
+<xmp class="code">var x = 10;
+x +=5;  //x=x+5;
+console.log(x);
+</xmp>
+<p class="explanationText">on console..</p>
+<xmp class="code">-> 15</xmp>
+              <p class="explanationText"><b>Multiplication</b> assignment:</p>
+<xmp class="code">var y=10;
+y*=5;  //y=y*5;
+console.log(y);
+</xmp>
+<p class="explanationText">on console..</p>
+<xmp class="code">-> 50</xmp>
+                         <p class="explanationText">In general..</p>
+
+<xmp class="code">x = y	(x = y) //Assignment
+
+x += y	(x = x + y) //Addition assignment
+
+x -= y	(x = x - y) //Subtraction assignment
+
+x *= y	(x = x * y) //Multiplication assignment
+
+x /= y	(x = x / y) //Division assignment
+
+x %= y	(x = x % y) //Remainder assignment
+
+x **= y	(x = x ** y)  //Exponential assignment
+
+x <<= y	(x = x << y) //Left shift assignment
+
+x >>= y	(x = x >> y) //Right shift assignment
+
+x >>>= y (x = x >>> y) //Unsigned right shift assignment
+
+x &= y	(x = x & y)  //Bitwise AND assignment
+
+x ^= y	(x = x ^ y)  //Bitwise XOR assignment
+
+x |= y	(x = x | y)  //Bitwise OR assignment</xmp>                   
+
+<p class="explanationHeading">Comparison</p>
+<p class="explanationText">The <b>Comparison </b>operator used to compare two values.</p>
+
+<xmp class="code">if ('5'==5)
+return true;
+else
+return false;</xmp>
+<p class="explanationText">on console..</p>
+<xmp class="code">-> true</xmp>
+
+<p class="explanationText">But if we try <b>===</b> operator instead of <b>==</b> it will return <b>false</b> as the <b>===</b> operator strictly compares the two values.</p>
+
+<xmp class="code">console.log(3>4);   //-> false
+console.log(3!=4);   //-> true
+console.log('5'!=5);   //-> false
+console.log('5'!==5);   //-> true
+</xmp>
+<p class="explanationText">in general..</p>
+<xmp class="code">==   equal to
+===   strictly equal to
+!=    not equal
+!==   strictly not equal
+>     greater than
+<     less than
+>=    greater than or equal to
+<=    less than or equal to</xmp>
+
+            <p class="explanationHeading">Bitwise</p>
+
+            <p class="explanationText">A <b>bitwise</b> operation operates on one or more bit patterns or binary numerals at the level of their individual bits.</p>
+<xmp class="code">console.log(1&0);  //-> 0
+console.log(1&1);  //-> 1
+console.log(!true);  //-> false
+</xmp>
+
+
+<p class="explanationText">in general..</p>
+<xmp class="code">&	AND	
+~	NOT	
+^	XOR	
+<<	shift left	
+>>	shift right	
+>>>  Zero-fill right shift</xmp>
+
+<p class="explanationText">some more operations..</p>
+<xmp class="code">console.log(7^3);  //-> 4
+console.log(9&1);  //-> 1
+console.log(5|2);  //-> 7
+</xmp>
+            <p class="explanationNote"><b>Note:</b>In case of <b>bitwise </b>operators the operands first converted to <b>binary </b>and then bitwise operations are performed b/w the converted binary numbers.</p>
+
+<xmp class="code">console.log(7^3);
+
+7 ->        0 1 1 1
+3 ->      ^ 0 0 1 1
+-------------------
+result->    0 1 0 0  //-> 4 
+
+console.log(9&1);
+
+9 ->        1 0 0 1
+1 ->     &  0 0 0 1
+-------------------
+result->    0 0 0 1  //-> 1
+
+console.log(5|2);
+
+5 ->        0 1 0 1
+2 ->        0 0 1 0
+-------------------
+result->    0 1 1 1  //-> 7</xmp>
+
+            <p class="explanationHeading">String Operator</p>
+            <p class="explanationText">In javascript the <b>+ </b>operator is used to concatenate two strings.</p>
+<xmp class="code">var x = "The Big";
+var y = "Bang Theory!";
+console.log(x+" "+y);   // -> The Big Bang Theory!</xmp>
+
+<xmp class="code">var actor = "Robert"
+ actor+=" Downey Jr."
+ console.log(actor);  // -> Robert Downey Jr. 
+</xmp>
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
