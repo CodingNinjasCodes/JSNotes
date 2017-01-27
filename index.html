@@ -17,8 +17,8 @@
 		  <li onclick="openPage(event, 'variables')"><a href="javascript:void(0)" class="tablinks">Variables</a></li>
 		  <li onclick="openPage(event, 'data-types')"><a href="javascript:void(0)" class="tablinks">Datatypes</a></li>
 		  <li onclick="openPage(event, 'operators')"><a href="javascript:void(0)" class="tablinks">Operators</a></li>
-		  <li onclick="openPage(event, 'logical-operators')"><a href="javascript:void(0)" class="tablinks">Logical Operators</a></li>
-		  <li onclick="openPage(event, 'conditional-operators')"><a href="javascript:void(0)" class="tablinks">Conditional Operators</a></li>
+		 <!-- <li onclick="openPage(event, 'logical-operators')"><a href="javascript:void(0)" class="tablinks">Logical Operators</a></li>
+		  <li onclick="openPage(event, 'conditional-operators')"><a href="javascript:void(0)" class="tablinks">Conditional Operators</a></li>-->
 		  <li onclick="openPage(event, 'for-while')"><a href="javascript:void(0)" class="tablinks">For, While</a></li>
 		  <li onclick="openPage(event, 'functions')"><a href="javascript:void(0)" class="tablinks">Functions</a></li>
 		  <li onclick="openPage(event, 'array-vectors')"><a href="javascript:void(0)" class="tablinks">Array Vectors</a></li>
@@ -86,7 +86,7 @@
 			<h3 class="heading">Operators</h3>
 			<div class="content">
 				<!-- Start writing from here -->
-                <p class="explanationHeading">Arithmetic</p>
+                <p class="explanationHeading">Arithmetic Operators</p>
                 <p class="explanationText">Javascript supports basic arithmetic operations like Addition <b>(+)</b>,subtraction <b>(-)</b>,multiplication <b>(*)</b>, division <b>(/)</b> and modulus <b>(%)</b>.</p>   
 <xmp class="code">console.log(13+12);
 console.log(13-12);
@@ -101,7 +101,7 @@ console.log(15%4);
 -> 4
 -> 3
 </xmp>            
-            <p class="explanationHeading">Assignment</p>
+            <p class="explanationHeading">Assignment Operators</p>
             <p class="explanationText">The Assignment operator <b>=</b> assigns a particular value to a variable.</p>
 <xmp class="code">var x=3; //3 is assigned to x
 </xmp>    
@@ -147,7 +147,7 @@ x ^= y	(x = x ^ y)  //Bitwise XOR assignment
 
 x |= y	(x = x | y)  //Bitwise OR assignment</xmp>                   
 
-<p class="explanationHeading">Comparison</p>
+<p class="explanationHeading">Comparison Operators</p>
 <p class="explanationText">The <b>Comparison </b>operator used to compare two values.</p>
 
 <xmp class="code">if ('5'==5)
@@ -174,7 +174,7 @@ console.log('5'!==5);   //-> true
 >=    greater than or equal to
 <=    less than or equal to</xmp>
 
-            <p class="explanationHeading">Bitwise</p>
+            <p class="explanationHeading">Bitwise Operators</p>
 
             <p class="explanationText">A <b>bitwise</b> operation operates on one or more bit patterns or binary numerals at the level of their individual bits.</p>
 <xmp class="code">console.log(1&0);  //-> 0
@@ -230,16 +230,31 @@ console.log(x+" "+y);   // -> The Big Bang Theory!</xmp>
  console.log(actor);  // -> Robert Downey Jr. 
 </xmp>
 
-           
+           <p class="explanationHeading">Logical Operators</p>
+            <p class="explanationText">Logical operators return true or false depending upon the value of operands.</p>
+            <p class="explanationText">There are three kinds of logical operators.</p>
+            <ul class="explanationText"><li><b>&&</b>  (logical AND)</li>
+            <li><b>||</b>  (logical OR)</li>
+            <li><b>!</b>  (logical NOT)</li></ul>
 
+<xmp class="code">console.log(true&&true);  // -> true
+console.log(false&&true&&true);  // -> false</xmp>
+            <p class="explanationNote"><b>Note:</b>While using <b>Logical AND</b> if any of the operand value is <b>false</b> then the resultant expression will return false else it will return <b>true</b>.</p>
+<xmp class="code">console.log(true||true);  // -> true
+console.log(true||true||false);  // -> true
+console.log(false||false);  // -> false</xmp>
+            <p class="explanationNote"><b>Note:</b> In case of <b>Logical OR </b>if any of the operand value is <b>true</b> then the expression also returns true else it will return <b>false</b>.</p>
 
+<xmp class="code">console.log(!true);  // -> false
+console.log(!false);  // -> true</xmp>
 
-
-
-
-
-
-
+            <p class="explanationHeading">Conditional Operator</p>
+<xmp class="code">console.log(4<3?first:second);  // -> second
+console.log(4>3?first:second);  // -> first</xmp>          
+              
+              <p class="explanationText">In general..</p>
+              <xmp class="code">condition ? first : second</xmp>
+            <p class="explanationText">Conditional operator also known as <b>ternary</b> operator returns <b>first</b> if the condition is true else returns <b>second</b> if the condition is false.</p>
 
 
 
@@ -253,11 +268,13 @@ console.log(x+" "+y);   // -> The Big Bang Theory!</xmp>
 			</div>
 		</div>
 
-		<div id="logical-operators" class="tabcontent">
+		<!--<div id="logical-operators" class="tabcontent">
 			<h3 class="heading">Logical Operators</h3>
 			<div class="content">
 				<!-- Start writing from here -->
-				<div class="navigationArrows">
+				
+         
+		   <!--		<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
 				</div>
@@ -268,12 +285,12 @@ console.log(x+" "+y);   // -> The Big Bang Theory!</xmp>
 			<h3 class="heading">Conditional Operators</h3>
 			<div class="content">
 				<!-- Start writing from here -->
-				<div class="navigationArrows">
+		<!--		<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<div id="for-while" class="tabcontent">
 			<h3 class="heading" id="linksHeading">For, While</h3>
