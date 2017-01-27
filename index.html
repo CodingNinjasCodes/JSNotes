@@ -255,12 +255,6 @@ console.log(4>3?first:second);  // -> first</xmp>
               <p class="explanationText">In general..</p>
               <xmp class="code">condition ? first : second</xmp>
             <p class="explanationText">Conditional operator also known as <b>ternary</b> operator returns <b>first</b> if the condition is true else returns <b>second</b> if the condition is false.</p>
-
-
-
-
-
-
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
@@ -296,6 +290,79 @@ console.log(4>3?first:second);  // -> first</xmp>
 			<h3 class="heading" id="linksHeading">For, While</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+            <p class="explanationText">For performing an action again and again loops are used in javascript.</p>
+            <p class="explanationHeading">The "for" loop.</p>
+<xmp class="code">for(initialisation;terminationCondition;increment/decrement)
+{
+// action 
+}</xmp>
+
+            <p class="explanationText">The first value is the <b>initialisation</b> condition(from where loop starts),the second one is the <b>termination</b> condition(where loop ends) and the third one is the <b>increment/decrement</b> condition(the value incremented or decremented by the provided value).</p>
+<xmp class="code">for(var i=0;i<5;i++)
+{
+console.log("for loop prints: "+i);
+}</xmp>
+            <p class="explanationText">on console..</p>
+<xmp class="code">"for loop prints: 0"
+"for loop prints: 1"
+"for loop prints: 2"
+"for loop prints: 3"
+"for loop prints: 4"</xmp>    
+        <p class="explanationText">nested "for" loops..</p>
+<xmp class="code">for (var i = 1; i <= 5; i++) {
+var output = "";
+for (var j = 1; j <= i; j++) {
+     output += "*"
+    }
+  console.log(output);
+}</xmp>   
+        <p class="explanationText">on console..</p>
+<xmp class="code">"*"
+"**"
+"***"
+"****"
+"*****"</xmp>                     
+
+            <p class="explanationHeading">The "While" loop</p>
+            <p class="explanationText">The <b>while</b> loop works until a condition returns false.</p>
+<xmp class="code">var i=5;  //initialisation
+while(i>=1)   //termination condition
+{
+console.log("While loop prints: "+i);
+i--;  //decrement condition
+}</xmp>
+
+            <p class="explanationText">on console..</p>
+<xmp class="code">"While loop prints: 5"
+"While loop prints: 4"
+"While loop prints: 3"
+"While loop prints: 2"
+"While loop prints: 1"</xmp>            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
