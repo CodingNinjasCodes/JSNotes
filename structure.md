@@ -8,6 +8,7 @@
 * For , while >kamal
 * Functions >kamal
 * Arrays, Vectors >kamal
+* Closures > manish
 * Objects >manish
 * Prototypes >manish
 * Detailed in Browser Javascript and DOM Manipulation : *incomplete*
