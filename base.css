@@ -111,6 +111,7 @@ ul.tab li:focus,
     border-top: none;
     padding-left: 1em;
     padding-right: 0.4em;
+    margin-left: 20%;
 }
 
 .active {
@@ -131,6 +132,7 @@ li.active a {
     display: block;
     padding: 6px 12px;
     text-align: center;
+    margin-left: 20.5%;
 }
 
 #default h3 {
@@ -175,11 +177,11 @@ li.active a {
     /*color: white;*/
     color: rgba(0,0,0,0.64);
     font-size: 1.4em;
-    font-weight: bold;
+    font-weight: normal;
     margin-right: 2em;
     padding:0.8em 1em;
     margin-bottom:0.85em;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
     transition: box-shadow .25s;
     border-radius: 2px;
 }
