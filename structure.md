@@ -1,6 +1,7 @@
 * Introduction >manish
-* Variables >manish
-* Data Types >manish
+* ~~Variables >manish~~
+* ~~Data Types >manish~~
+* Variables & Datatypes > manish
 * Operators >kamal
 * Logical Operators >kamal
 * Conditional Operators >kamal
