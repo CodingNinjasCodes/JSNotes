@@ -21,7 +21,7 @@
 		  <li onclick="openPage(event, 'conditional-operators')"><a href="javascript:void(0)" class="tablinks">Conditional Operators</a></li>-->
 		  <li onclick="openPage(event, 'for-while')"><a href="javascript:void(0)" class="tablinks">For, While</a></li>
 		  <li onclick="openPage(event, 'functions')"><a href="javascript:void(0)" class="tablinks">Functions</a></li>
-		  <li onclick="openPage(event, 'array-vectors')"><a href="javascript:void(0)" class="tablinks">Array Vectors</a></li>
+		  <li onclick="openPage(event, 'array')"><a href="javascript:void(0)" class="tablinks">Array</a></li>
 		  <li onclick="openPage(event, 'objects')"><a href="javascript:void(0)" class="tablinks">Objects</a></li>
 		  <li onclick="openPage(event, 'prototypes')"><a href="javascript:void(0)" class="tablinks">Prototypes</a></li>
 		</ul>
@@ -400,8 +400,8 @@ while (condition);
 			</div>
 		</div>
 
-		<div id="array-vectors" class="tabcontent">
-			<h3 class="heading">Array, Vectors</h3>
+		<div id="array" class="tabcontent">
+			<h3 class="heading">Array</h3>
 			<div class="content">
 				<!-- Start writing from here -->
 				
@@ -450,11 +450,11 @@ console.log(x);  //-> 5
 
 
             <p class="explanationHeading">Methods in an array</p>
-            <li class="explanationList">push() and pop()</li>
+            <!--<li class="explanationList">push() and pop()</li>
             <li class="explanationList">shift() and unshift()</li>
             <li class="explanationList"></li>
             <li class="explanationList"></li>
-            
+            -->
 
             <p class="explanationText">The <b>push()</b> method is used to append a data to the end of an array.</p>
 <xmp class="code">var x = ['a','b','c'];
@@ -486,14 +486,23 @@ console.log(myArray);  //-> [["Alan", 40, "Men"], ["Charlie", 42, "Men"], ["Jake
 x.reverse();
 console.log(x); //-> ["five", "four", "three", "two", "one"]</xmp>
 
-            <p class="explanationText">The <b>sort() </b>method sorts an array.</p>
-<xmp>
-</xmp>            
-             
+          <p class="explanationText">The <b>sort() </b>method sorts an array.</p>
+<xmp class="code">var friends = ["Rachel", "Chandler", "Ross", "Monica", "Joey"];
+friends.sort();
+console.log(friends); //-> ["Chandler", "Joey", "Monica", "Rachel", "Ross"]</xmp>            
+            
+
+            <p class="explanationText">The <b>concat()</b> method joins two arrays.</p>
+<xmp class="code">var num1 = ["one","two"];
+var num2 = ["three", "four","five"];
+var num3 = num1.concat(num2);
+console.log(num3);  //->  ["one", "two", "three", "four", "five"]</xmp> 
 
 
-
-
+            <p class="explanationText">The <b>slice()</b> takes a particular part from an array.</p>
+<xmp class="code">var x = [34,23,88,3,10];
+console.log(x.slice(2));  //-> [88,3,10]
+console.log(x.slice(1,4));    //-> [23,88,3]</xmp> 
 
 
 
