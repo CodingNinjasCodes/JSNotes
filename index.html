@@ -27,6 +27,7 @@
 		</ul>
 
 <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=PT Mono" rel="stylesheet" type="text/css">
 
 		<!-- <div id="default" class="default-page">
 		  <h3>Getting Started With</h3>
@@ -221,13 +222,13 @@ result->    0 1 1 1  //-> 7</xmp>
 
             <p class="explanationHeading">String Operator</p>
             <p class="explanationText">In javascript the <b>+ </b>operator is used to concatenate two strings.</p>
-<xmp class="code">var x = "The Big";
-var y = "Bang Theory!";
-console.log(x+" "+y);   // -> The Big Bang Theory!</xmp>
+<xmp class="code">var x = "Robert";
+var y = "Downey Jr";
+console.log(x+" "+y);   // -> "Robert Downey Jr"</xmp>
 
-<xmp class="code">var actor = "Robert"
- actor+=" Downey Jr."
- console.log(actor);  // -> Robert Downey Jr. 
+<xmp class="code">var smile = "LOL"
+ smile+=" :D"
+ console.log(smile);  // -> "LOL :D" 
 </xmp>
 
            <p class="explanationHeading">Logical Operators</p>
@@ -381,24 +382,6 @@ Do-While prints 4
 while (condition);
 </xmp>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
@@ -421,6 +404,114 @@ while (condition);
 			<h3 class="heading">Array, Vectors</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+				
+            <p class="explanationText">Arrays are used to store <b>multiple</b> values in a single variable.</p>
+<xmp class="code">var comedy = ["F.R.I.E.N.D.S","The Big Bang Theory", 
+"Two And a Half Men","How i Met Your Mother"];</xmp>            
+            <p class="explanationText">The first element is located at the position <b>0</b> the second at the position <b>1</b> and so on..</p>
+<xmp class="code">console.log(comedy[0])  //->  "F.R.I.E.N.D.S";
+console.log(comedy[2]);  //-> "Two And a Half Men"</xmp>            
+            <p class="explanationText">In the above code the different values are stored in a single variable named <b>comedy</b>.</p>
+            <p class="explanationText">We can also iterate through the whole array using the <b>for</b> loop.</p>
+<xmp class = "code">for(var i=0;i< comedy.length;i++)
+{
+   console.log(comedy[i]);	
+}</xmp>        
+            <p class="explanationText">results in..</p>
+<xmp class="code">"F.R.I.E.N.D.S"
+"The Big Bang Theory" 
+"Two And a Half Men"
+"How i Met Your Mother"</xmp>            
+            <p class="explanationText">Also, multiple <b>datatypes</b> can be added in an array.<p>
+<xmp class="code">var imdb = ["F.R.I.E.N.D.S.",9,"How i Met Your Mother",8.4];</xmp>
+<xmp class="code">console.log(imdb[3]);  //-> 8.4</xmp>            
+
+              <p class="explanationText">These are called <b>1-D</b> arrays.</p>
+            <p class="explanationText">We can also add multiple arrays inside an array using <b>multi-dimentional</b> arrays.</p>
+<xmp class="code">var cast = [["Sheldon", "Penny", "Leonard" , "Howard", "Raj"], 
+["Ted", "Robin", "Lily", "Marshal", "Barney"]];</xmp>  
+            
+            <p class="explanationText">There are two arrays inside an array naming <b>cast</b> each one of these can be accessed by using two square brackets.</p>          
+<xmp class="code">var x = cast[1][4];
+console.log(x);  //-> "Barney"</xmp>
+
+<xmp class="code">console.log(cast[0][0]);  //-> "Sheldon"</xmp>
+            <p class="explanationText">It is also possible to have multiple nested arrays as many as possible.</p>
+<xmp class="code">var num = [
+    [1,2,3],
+    [[4,5,6], 7, 8],
+    [9,10,11],
+    [12,13,14]   
+];</xmp>
+
+<xmp class="code">var x = num[1][0][1];
+console.log(x);  //-> 5  
+</xmp>
+
+
+            <p class="explanationHeading">Methods in an array</p>
+            <li class="explanationList">push() and pop()</li>
+            <li class="explanationList">shift() and unshift()</li>
+            <li class="explanationList"></li>
+            <li class="explanationList"></li>
+            
+
+            <p class="explanationText">The <b>push()</b> method is used to append a data to the end of an array.</p>
+<xmp class="code">var x = ['a','b','c'];
+x.push('d');
+console.log(x);  //-> ["a", "b", "c", "d"]</xmp>
+
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.push(["Alan", 40, "Men"]);
+console.log(myArray);  //-> [["Charlie", 42, "Men"], ["Jake", 15, "Boy"], ["Alan", 40, "Men"]]</xmp>
+
+            <p class="explanationText">The <b>pop()</b> method removes an element from the end of an array.</p>
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.pop();
+console.log(myArray);  //-> [["Charlie", 42, "Men"]]</xmp>            
+
+            <p class="explanationText">The <b>shift()</b> method removes an element from the begining of an array.</p>
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.shift();
+console.log(myArray);  //-> [["Jake", 15, "Boy"]]</xmp>            
+
+            <p class="explanationText">The <b>unshift() </b>method adds an element at the starting index of an array.</p>
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.unshift(["Alan", 40, "Men"]);
+console.log(myArray);  //-> [["Alan", 40, "Men"], ["Charlie", 42, "Men"], ["Jake", 15, "Boy"]]</xmp>
+
+
+            <p class="explanationText">The <b>reverse() </b>method reverses the array.</p>  
+<xmp class="code">var x = ["one","two","three","four","five"];
+x.reverse();
+console.log(x); //-> ["five", "four", "three", "two", "one"]</xmp>
+
+            <p class="explanationText">The <b>sort() </b>method sorts an array.</p>
+<xmp>
+</xmp>            
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
