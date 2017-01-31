@@ -22,6 +22,7 @@
 		  <li onclick="openPage(event, 'for-while')"><a href="javascript:void(0)" class="tablinks">For, While</a></li>
 		  <li onclick="openPage(event, 'functions')"><a href="javascript:void(0)" class="tablinks">Functions</a></li>
 		  <li onclick="openPage(event, 'array-vectors')"><a href="javascript:void(0)" class="tablinks">Array Vectors</a></li>
+		  <li onclick="openPage(event, 'closures')"><a href="javascript:void(0)" class="tablinks">Closures</a></li>
 		  <li onclick="openPage(event, 'objects')"><a href="javascript:void(0)" class="tablinks">Objects</a></li>
 		  <li onclick="openPage(event, 'prototypes')"><a href="javascript:void(0)" class="tablinks">Prototypes</a></li>
 		</ul>
@@ -492,6 +493,70 @@ while (condition);
 			<h3 class="heading">Array, Vectors</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+				<div class="navigationArrows">
+			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
+					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
+				</div>
+			</div>
+		</div>
+
+		<div id="closures" class="tabcontent">
+			<h3 class="heading">Closures</h3>
+		  	<div class="content">
+				<!-- Start writing from here -->
+				<p class="explanationNote"><em>NOTE: </em> Read this page very very carefully. The topic covered is the heart of Object Oriented Programming using JS.</p>
+				<p class="explanationText">
+					The local variables inside the funtions are recreated each time a function is called and these are independent of each other. Normally, in other languages when any function exits, the local variables are destroyed. JS has the ability to store functions as variables under some circumstances. Since functions can be stored in variable names like:
+				</p>
+<xmp class="code">var fun = function(){
+    //function Code
+}</xmp>
+				<div class="explanationText">
+					A variable containing a function can be returned from another function. Now the returned function can be stored in another variable and the returned function can be executed later on as follows:
+				</div>
+<xmp class="code">function outerFunction(){
+    var innerFunction = function(){
+        console.log("inner function was executed");
+    }
+    return innerFunction;
+}
+var fun = outerFunction();
+fun();</xmp>
+				<p class="explanationText">
+					Now consider the case below in which the returned function contains the local variables of the function being called.
+				</p>
+<xmp class="code">function outerFunction1(num){
+    var innerVar = 10*num;
+    return function(){
+        console.log(innerVar);
+    }
+}
+var fun1 = outerFunction1(1);
+var fun2 = outerFunction1(2);
+var fun3 = outerFunction1(3);
+var fun4 = outerFunction1(4);
+fun1();
+fun2();
+fun3();
+fun4();
+fun1();</xmp>
+				<p class="explanationText">
+					The above example prints the following things on the console.
+				</p>
+<xmp class="code">>10
+>20
+>30
+>40
+>10</xmp>
+				<p class="explanationText">
+					You might think why this is happening. The answer is that the local variables of the binding function are being used in the function that is being returned, then JS interpretter is smart enough to not to destroy the local variables. And since on each new call to any function the local variables are recreated, the returned functions have independent variables i.e, changing value of local variables of any of the returned function won't effect the others. <br>
+					This feature of storing specific intance of local variables of enclosing function is called <em>closure</em>.
+					A <em>closure</em> might be thought of as a closed packet of local variables of the enclosing function, that are being used in the function to be returned.
+				</p>
+				<p class="explanationNote">
+					<em>NOTE:</em> It is very important to use the keyword <code><b>var</b> before the variables that will be used in the closure because if the variable with same name exists in global scope too, closure won't be formed as desired and the global scope variable would be used in the function!</code>
+				</p>
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
