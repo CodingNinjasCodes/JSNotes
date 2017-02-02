@@ -200,7 +200,7 @@ li.active a {
 }
 .code {
     padding: 8px;
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-family: "PT mono", "Liberation Mono", Courier, monospace;
     color: rgba(0,0,0,0.60);
     margin-top: 1em;
     margin-bottom: 1em;
@@ -255,7 +255,7 @@ dd{
 .explanationList {
     /*line-height: 1.3em;*/
     color: rgba(0, 0, 0, 0.74);
-    font-family: inherit;
+    font-family: "Open Sans",sans-serif;;
     margin-right: 1.5em;
     margin-bottom: 0.4em;
     margin-left: 2em;
