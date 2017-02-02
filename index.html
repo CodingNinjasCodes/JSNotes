@@ -407,12 +407,13 @@ while (condition);
 				
             <p class="explanationText">Arrays are used to store <b>multiple</b> values in a single variable.</p>
 <xmp class="code">var comedy = ["F.R.I.E.N.D.S","The Big Bang Theory", 
-"Two And a Half Men","How i Met Your Mother"];</xmp>            
+"Two And a Half Men","How i Met Your Mother"];</xmp>       
+            <p class="explanationText">In the above code the different values are stored in a single variable named <b>comedy</b>.</p>
+
             <p class="explanationText">The first element is located at the position <b>0</b> the second at the position <b>1</b> and so on..</p>
 <xmp class="code">console.log(comedy[0])  //->  "F.R.I.E.N.D.S";
 console.log(comedy[2]);  //-> "Two And a Half Men"</xmp>            
-            <p class="explanationText">In the above code the different values are stored in a single variable named <b>comedy</b>.</p>
-            <p class="explanationText">We can also iterate through the whole array using the <b>for</b> loop.</p>
+             <p class="explanationText">We can also iterate through the whole array using the <b>for</b> loop.</p>
 <xmp class = "code">for(var i=0;i< comedy.length;i++)
 {
    console.log(comedy[i]);	
@@ -493,10 +494,10 @@ console.log(friends); //-> ["Chandler", "Joey", "Monica", "Rachel", "Ross"]</xmp
             
 
             <p class="explanationText">The <b>concat()</b> method joins two arrays.</p>
-<xmp class="code">var num1 = ["one","two"];
-var num2 = ["three", "four","five"];
-var num3 = num1.concat(num2);
-console.log(num3);  //->  ["one", "two", "three", "four", "five"]</xmp> 
+<xmp class="code">var boys = ["Chandler","Ross"];
+var girls = ["Monica", "Rachel","Joey"];
+var friends = boys.concat(girls);
+console.log(friends);  //->  ["Chandler", "Ross", "Monica", "Rachel", "Joey"]</xmp> 
 
 
             <p class="explanationText">The <b>slice()</b> takes a particular part from an array.</p>
