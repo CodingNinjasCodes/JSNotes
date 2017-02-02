@@ -393,6 +393,69 @@ while (condition);
 			<h3 class="heading">Functions</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+            <p class="explanationText">For printing something on console..</p>
+            <xmp class="code">console.log("Can't talk what's app only!!");</xmp>
+            <p class="explanationText">Well, that's one way to go another way is to use <b>functions</b>.</p>
+<xmp class="code">function print(text){
+console.log(text);
+}</xmp>
+ 
+<xmp class = "code">print("Can't talk what's app only!!");</xmp>
+            <p class="explanationText">Will do the same.</p>
+            <p class="explanationText">A function in javascript can be used by using the keyword <b>function</b> followed by the <b>functionName</b>.Inside this function the whole block of code can be written.This is called defining the function.</p>
+            <p class="explanationText">In order to use that function we have to <b>call</b> or <b>invoke</b> that function, this can be done by writing the name of the function followed by <b>( )</b>.</p>
+
+            <p class="explanationText">A function can be passed with or without <b>arguments</b>.These <b>arguments</b> can be one or more than one.</p>
+<xmp class ="code">function noArgument(){
+console.log("Hello-Kitty!!");
+}
+
+noArgument(); //-> "Hello-Kitty!!"</xmp>
+
+<xmp class="code">function withArguments(one,two){
+console.log("My name is " +one+ " and i luv " +two+ " :-P");
+}
+
+withArguments("Kamal","Pizza"); 
+//->  "My name is Kamal and i luv Pizza :-P"</xmp>
+            
+            <p class="explanationText">In the <b>withArgument(one, two)</b> function the <b>one</b> and <b>two</b> are the arguments that are therefore used in the console.log() function.</p>
+
+            <p class="explanationText">in general..</p>
+<xmp class="code">function functionName(argument1,argument2,----){
+//set of instructions..
+}</xmp>            
+
+            <p class="explanationText">To send a value back out of a function we can use a <b>return</b> statement.</p>
+<xmp class="code">function valueBack(a, b)
+{
+   return a+b;
+}
+
+var x = valueBack(311,567);
+console.log(x); //->  878
+</xmp>
+            <p class="explanationText">In order to use this returned value we have to call the <b>valueBack(311,567)</b> function and then assign this to a variable <b>x</b>.</p>
+
+            <p class="explanationNote"><b>Note:</b> Any last statement in the javascript function will be treated as the return statement.</p>
+
+            <p class="explanationText">Any variable that is defined outside the function has a <b>global scope</b> and can be used outside as well as the inside of a function.</p>
+         
+            <p class="explanationText">Any variable that is defined inside of a function is of <b>local scope</b> and can be used inside of the function only.</p>
+            <p class="explanationNote"><b>Note: </b>The function arguments are also considered in the local scope.</p>
+
+<xmp class="code">var x = 21; //global scope
+function fun(){
+var y = 22;  //local scope
+console.log("I am "+ x +", next year I'm gonna be "+y);
+} 
+
+fun(); //->  "I am 21, next year I'm gonna be 22" 
+</xmp>
+
+
+
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
