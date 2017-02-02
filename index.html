@@ -456,8 +456,7 @@ console.log(x);  //-> 5
             <li class="explanationList"></li>
             <li class="explanationList"></li>
             -->
-
-            <p class="explanationText">The <b>push()</b> method is used to append a data to the end of an array.</p>
+            <li class="explanationList">The <b>push()</b> method is used to append a data to the end of an array.</li>
 <xmp class="code">var x = ['a','b','c'];
 x.push('d');
 console.log(x);  //-> ["a", "b", "c", "d"]</xmp>
@@ -466,47 +465,67 @@ console.log(x);  //-> ["a", "b", "c", "d"]</xmp>
 myArray.push(["Alan", 40, "Men"]);
 console.log(myArray);  //-> [["Charlie", 42, "Men"], ["Jake", 15, "Boy"], ["Alan", 40, "Men"]]</xmp>
 
-            <p class="explanationText">The <b>pop()</b> method removes an element from the end of an array.</p>
+            <li class="explanationList">The <b>pop()</b> method removes an element from the end of an array.</li>
 <xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
 myArray.pop();
 console.log(myArray);  //-> [["Charlie", 42, "Men"]]</xmp>            
 
-            <p class="explanationText">The <b>shift()</b> method removes an element from the begining of an array.</p>
+            <li class="explanationList">The <b>shift()</b> method removes an element from the begining of an array.</li>
 <xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
 myArray.shift();
 console.log(myArray);  //-> [["Jake", 15, "Boy"]]</xmp>            
 
-            <p class="explanationText">The <b>unshift() </b>method adds an element at the starting index of an array.</p>
+            <li class="explanationList">The <b>unshift() </b>method adds an element at the starting index of an array.</li>
 <xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
 myArray.unshift(["Alan", 40, "Men"]);
 console.log(myArray);  //-> [["Alan", 40, "Men"], ["Charlie", 42, "Men"], ["Jake", 15, "Boy"]]</xmp>
 
 
-            <p class="explanationText">The <b>reverse() </b>method reverses the array.</p>  
+            <li class="explanationList">The <b>reverse() </b>method reverses the array.</li>  
 <xmp class="code">var x = ["one","two","three","four","five"];
 x.reverse();
 console.log(x); //-> ["five", "four", "three", "two", "one"]</xmp>
 
-          <p class="explanationText">The <b>sort() </b>method sorts an array.</p>
-<xmp class="code">var friends = ["Rachel", "Chandler", "Ross", "Monica", "Joey"];
+          <li class="explanationList">The <b>sort() </b>method sorts an array.</li>
+<xmp class="code">var friends = ["Rachel", "Chandler", "Ross", "Monica", "Joey", "Phoebe"];
 friends.sort();
-console.log(friends); //-> ["Chandler", "Joey", "Monica", "Rachel", "Ross"]</xmp>            
-            
+console.log(friends); //-> ["Chandler", "Joey", "Monica","Phoebe", "Rachel", "Ross"]</xmp>            
+<xmp class ="code">var num = [35,150,75];
+console.log(num.sort());  //-> [150, 35, 75]</xmp>            
 
-            <p class="explanationText">The <b>concat()</b> method joins two arrays.</p>
-<xmp class="code">var boys = ["Chandler","Ross"];
-var girls = ["Monica", "Rachel","Joey"];
+        <p class="explanationText">Which is incorrect!.This happens because the <b>sort()</b> method sorts the array values in an alphabetical or in ascending order by converting the values into strings, hence the "1" in "150" comes before the "3" in "35" and the "7" of "75" comes after "3" of "35" hence results in [150, 35, 75].</p>
+        <p class="explanationText">In order to avoid this a compare() function should be passed with the <b>sort()</b> method.</p>
+
+<xmp class="code">num.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(num); //-> [35,75,150]</xmp>        
+           <p class="explanationText">The compare function returns a negative number if a is  before b, a positive number if a is after b, or 0 if they are equal.</p>
+           <p class="explanationText">The above array can also be sorted in decreasing order just by changing the order of a with b and b with a.</p>
+<xmp class="code">num.sort(function(a, b) {
+  return b - a;
+});
+
+console.log(num); //-> [150,75,35]</xmp>           
+        
+        <p class="explanationText">Returns the array in decreasing order.</p>
+
+
+            <li class="explanationList">The <b>concat()</b> method joins two arrays.</li>
+<xmp class="code">var boys = ["Chandler","Ross", "Joey"];
+var girls = ["Monica", "Rachel", "Phoebe"];
 var friends = boys.concat(girls);
-console.log(friends);  //->  ["Chandler", "Ross", "Monica", "Rachel", "Joey"]</xmp> 
+console.log(friends);  //->  ["Chandler", "Ross", "Joey", "Monica", "Rachel", "Phoebe"]</xmp> 
 
 
-            <p class="explanationText">The <b>slice()</b> takes a particular part from an array.</p>
+            <li class="explanationList">The <b>slice()</b> takes a particular part from an array.</li>
 <xmp class="code">var x = [34,23,88,3,10];
 console.log(x.slice(2));  //-> [88,3,10]
 console.log(x.slice(1,4));    //-> [23,88,3]</xmp> 
 
 
-
+            <p class="explanationNote"><b>Note:</b>The <b>slice(2)</b> method returns rest of the values starting from index 2, whereas the <b>slice(1,4)</b> returns the elements present from index 1 to 3 excluding the element present at the fourth index.</p> 
 
 
 
