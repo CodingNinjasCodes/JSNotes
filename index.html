@@ -752,6 +752,35 @@ fun1();</xmp>
 		  	<div class="content">
 				<!-- Start writing from here -->
 
+				<p class="explanationText">
+					Concepts of Object Oriented Programming in JS are implemented a bit different manner from languages like, Java or C++. In Java Objects are a collection of properties which are stored in key and value pairs. Now you might wonder how the objects would have functions? This is simple, the ability of JS to store functions as the variables is exploited here! So, in JS, the objects are stored as a collection of key-value pairs. If all this seems fuzzy just wait for all the explanation below.
+				</p>
+
+				<h4 class="explanationHeading">Ways to access object properties</h4>
+				<p class="explanationText">
+					To access the object properties, we use the following syntax:
+<xmp class="code">objectName.propertyName;</xmp>
+				</p>
+				<p class="explanationText">
+					This syntax is also valid:
+				</p>
+<xmp class="code">object["propertyName"];</xmp>
+				<p class="explanationText">
+					In the above usage, first the expression inside the square brackets is evaluated and then then the final string formed is matched with the properties of the object.
+					<br>
+					In the case when the called property of the object doesn't exist, <code><b>undefined</b></code> is returned.
+				</p>
+
+				<h4 class="explanationHeading">Declaring an Object</h4>
+				<p class="explanationText">The following syntax is used for declaring an Object and for declaring object properties:</p>
+<xmp class="code">var myPC = new Object();
+myPC.make = "hp";
+myPC.model = "pavillion";
+myPC.year = 2014;</xmp>
+
+
+				<div class=""></div>
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
