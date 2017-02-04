@@ -182,14 +182,30 @@ li.active a {
     padding:0.8em 1em;
     margin-bottom:0.85em;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
-    transition: box-shadow .25s;
+    transition: box-shadow .15s;
     border-radius: 2px;
 }
 .explanationHeading:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
-.explanationText {
+.explanationSubHeading {
+   color: rgba(0,0,0,0.64);
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-right: 2em;
+    padding:0.8em 1em;
+    margin-bottom:0.85em;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+    transition: box-shadow .15s;
+    border-radius: 2px;
+}
+
+.explanationHeading:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.explanationSubHeading {
     /*line-height: 1.3em;*/
     line-height: 1.3em;
     color: inherit;

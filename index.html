@@ -772,11 +772,36 @@ fun1();</xmp>
 				</p>
 
 				<h4 class="explanationHeading">Declaring an Object</h4>
+				<p class="explanationText">
+					There are many ways of declaring objects in JS each one with its own benefits.
+				</p>
 				<p class="explanationText">The following syntax is used for declaring an Object and for declaring object properties:</p>
 <xmp class="code">var myPC = new Object();
 myPC.make = "hp";
 myPC.model = "pavillion";
 myPC.year = 2014;</xmp>
+				<h2 class="explanationSubHeading">
+					Using object intiializers
+				</h2>
+				<p class="explanationText">
+					The syntax for an object using an object initializer is:
+				</p>
+
+<xmp class="code">var obj = { property_1:   value_1,   // property_# may be an identifier...
+2:            value_2,   // or a number...
+// ...,
+"property n": value_n }; // or a string</xmp>
+
+				<h4 class="explanationHeading">Iterating object properties</h4>
+				<p class="explanationText">
+					The object properties can be iterated using the <code><b>for...in</b></code> loop construct as follows:
+				</p>
+
+<xmp class="code">var obj = myPC;
+
+for (var prop in obj) {
+  console.log('obj.' + prop, '=', obj[prop]);
+}</xmp>
 
 
 				<div class=""></div>
