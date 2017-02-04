@@ -787,10 +787,49 @@ myPC.year = 2014;</xmp>
 					The syntax for an object using an object initializer is:
 				</p>
 
-<xmp class="code">var obj = { property_1:   value_1,   // property_# may be an identifier...
-2:            value_2,   // or a number...
-// ...,
-"property n": value_n }; // or a string</xmp>
+<xmp class="code">var obj = { property_1:   value_1,  2:value_2,
+             // ...,"property n": value_n }; </xmp>
+
+             	<p class="explanationText">
+             		The <code>property</code> can be of type String or integer and the <code>value</code> can store anything like a <code>var</code>!
+             	</p>
+
+             	<h5 class="explanationSubHeading">
+             		Using constructor
+             	</h5>
+             	<p class="explanationText">
+             		For this form, first a constructor function is made and to make an object <code><b>new</b></code> keyword is used!
+             	</p>
+
+<xmp class="code">function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+var myCar = new Car("Toyota","Fortuner",2017)</xmp>
+				<p class="explanationText">
+					When <code><b>new</b></code> keyword is used a new space is allocated for the variable and in the constructor the object is refered using <code><b>this</b></code> keyword. 
+				</p>
+				<h5 class="explanationSubHeading">Using <code>Object.create</code> method</h5>
+				<p class="explanationText">
+					Objects can also be created using the Object.create() method. This method can be very useful, because it allows you to choose the prototype object for the object you want to create, without having to define a constructor function. You will be studying about prototypes in the next section! The code is:
+				</p>
+<xmp class="code">// Animal properties and method encapsulation
+var Animal = {
+  type: "Invertebrates", // Default value of properties
+  displayType : function() {  // Method which will display type of Animal
+    console.log(this.type);
+  }
+}
+
+// Create new animal type called animal1 
+var animal1 = Object.create(Animal);
+animal1.displayType(); // Output:Invertebrates
+
+// Create new animal type called Fishes
+var fish = Object.create(Animal);
+fish.type = "Fishes";
+fish.displayType(); // Output:Fishes</xmp>
 
 				<h4 class="explanationHeading">Iterating object properties</h4>
 				<p class="explanationText">
