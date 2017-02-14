@@ -47,7 +47,7 @@ ul.tab {
 /* Float the list items side by side */
 
 ul.tab li {
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-size: 2em;
     float: left;
     padding-bottom: 5px;
@@ -196,16 +196,17 @@ li.active a {
     font-family: inherit;
     margin: 0 2em 1em 1.2em;
     font-size: inherit;
+    font-family: "Open Sans",sans-serif;
 }
 .code {
     padding: 8px;
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-family: "PT mono", "Liberation Mono", Courier, monospace;
     color: rgba(0,0,0,0.60);
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left:3.5em;
     margin-right:3.5em;
-    background-color:rgba(0,0,0,0.1);
+    background-color:#f7f7f7;
     border: 1px solid lightgrey;
     border-radius: 3px;
     overflow-x:auto;
@@ -254,7 +255,7 @@ dd{
 .explanationList {
     /*line-height: 1.3em;*/
     color: rgba(0, 0, 0, 0.74);
-    font-family: inherit;
+    font-family: "Open Sans",sans-serif;;
     margin-right: 1.5em;
     margin-bottom: 0.4em;
     margin-left: 2em;

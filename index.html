@@ -17,15 +17,17 @@
 		  <li onclick="openPage(event, 'variables')"><a href="javascript:void(0)" class="tablinks">Variables</a></li>
 		  <li onclick="openPage(event, 'data-types')"><a href="javascript:void(0)" class="tablinks">Datatypes</a></li>
 		  <li onclick="openPage(event, 'operators')"><a href="javascript:void(0)" class="tablinks">Operators</a></li>
-		  <li onclick="openPage(event, 'logical-operators')"><a href="javascript:void(0)" class="tablinks">Logical Operators</a></li>
-		  <li onclick="openPage(event, 'conditional-operators')"><a href="javascript:void(0)" class="tablinks">Conditional Operators</a></li>
+		 <!-- <li onclick="openPage(event, 'logical-operators')"><a href="javascript:void(0)" class="tablinks">Logical Operators</a></li>
+		  <li onclick="openPage(event, 'conditional-operators')"><a href="javascript:void(0)" class="tablinks">Conditional Operators</a></li>-->
 		  <li onclick="openPage(event, 'for-while')"><a href="javascript:void(0)" class="tablinks">For, While</a></li>
 		  <li onclick="openPage(event, 'functions')"><a href="javascript:void(0)" class="tablinks">Functions</a></li>
-		  <li onclick="openPage(event, 'array-vectors')"><a href="javascript:void(0)" class="tablinks">Array Vectors</a></li>
+		  <li onclick="openPage(event, 'array')"><a href="javascript:void(0)" class="tablinks">Array</a></li>
 		  <li onclick="openPage(event, 'objects')"><a href="javascript:void(0)" class="tablinks">Objects</a></li>
 		  <li onclick="openPage(event, 'prototypes')"><a href="javascript:void(0)" class="tablinks">Prototypes</a></li>
 		</ul>
 
+<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=PT Mono" rel="stylesheet" type="text/css">
 
 		<!-- <div id="default" class="default-page">
 		  <h3>Getting Started With</h3>
@@ -85,6 +87,175 @@
 			<h3 class="heading">Operators</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+                <p class="explanationHeading">Arithmetic Operators</p>
+                <p class="explanationText">Javascript supports basic arithmetic operations like Addition <b>(+)</b>,subtraction <b>(-)</b>,multiplication <b>(*)</b>, division <b>(/)</b> and modulus <b>(%)</b>.</p>   
+<xmp class="code">console.log(13+12);
+console.log(13-12);
+console.log(5*3);
+console.log(16/4);
+console.log(15%4);
+</xmp>
+            <p class="explanationText">on console..</p>
+<xmp class="code">-> 25
+-> 1
+-> 15
+-> 4
+-> 3
+</xmp>            
+            <p class="explanationHeading">Assignment Operators</p>
+            <p class="explanationText">The Assignment operator <b>=</b> assigns a particular value to a variable.</p>
+<xmp class="code">var x=3; //3 is assigned to x
+</xmp>    
+       <p class="explanationText"><b>Addition</b> assignment:</p>        
+<xmp class="code">var x = 10;
+x +=5;  //x=x+5;
+console.log(x);
+</xmp>
+<p class="explanationText">on console..</p>
+<xmp class="code">-> 15</xmp>
+              <p class="explanationText"><b>Multiplication</b> assignment:</p>
+<xmp class="code">var y=10;
+y*=5;  //y=y*5;
+console.log(y);
+</xmp>
+<p class="explanationText">on console..</p>
+<xmp class="code">-> 50</xmp>
+                         <p class="explanationText">In general..</p>
+
+<xmp class="code">x = y	(x = y) //Assignment
+
+x += y	(x = x + y) //Addition assignment
+
+x -= y	(x = x - y) //Subtraction assignment
+
+x *= y	(x = x * y) //Multiplication assignment
+
+x /= y	(x = x / y) //Division assignment
+
+x %= y	(x = x % y) //Remainder assignment
+
+x **= y	(x = x ** y)  //Exponential assignment
+
+x <<= y	(x = x << y) //Left shift assignment
+
+x >>= y	(x = x >> y) //Right shift assignment
+
+x >>>= y (x = x >>> y) //Unsigned right shift assignment
+
+x &= y	(x = x & y)  //Bitwise AND assignment
+
+x ^= y	(x = x ^ y)  //Bitwise XOR assignment
+
+x |= y	(x = x | y)  //Bitwise OR assignment</xmp>                   
+
+<p class="explanationHeading">Comparison Operators</p>
+<p class="explanationText">The <b>Comparison </b>operator used to compare two values.</p>
+
+<xmp class="code">if ('5'==5)
+return true;
+else
+return false;</xmp>
+<p class="explanationText">on console..</p>
+<xmp class="code">-> true</xmp>
+
+<p class="explanationText">But if we try <b>===</b> operator instead of <b>==</b> it will return <b>false</b> as the <b>===</b> operator strictly compares the two values.</p>
+
+<xmp class="code">console.log(3>4);   //-> false
+console.log(3!=4);   //-> true
+console.log('5'!=5);   //-> false
+console.log('5'!==5);   //-> true
+</xmp>
+<p class="explanationText">in general..</p>
+<xmp class="code">==   equal to
+===   strictly equal to
+!=    not equal
+!==   strictly not equal
+>     greater than
+<     less than
+>=    greater than or equal to
+<=    less than or equal to</xmp>
+
+            <p class="explanationHeading">Bitwise Operators</p>
+
+            <p class="explanationText">A <b>bitwise</b> operation operates on one or more bit patterns or binary numerals at the level of their individual bits.</p>
+<xmp class="code">console.log(1&0);  //-> 0
+console.log(1&1);  //-> 1
+console.log(!true);  //-> false
+</xmp>
+
+
+<p class="explanationText">in general..</p>
+<xmp class="code">&	AND	
+~	NOT	
+^	XOR	
+<<	shift left	
+>>	shift right	
+>>>  Zero-fill right shift</xmp>
+
+<p class="explanationText">some more operations..</p>
+<xmp class="code">console.log(7^3);  //-> 4
+console.log(9&1);  //-> 1
+console.log(5|2);  //-> 7
+</xmp>
+            <p class="explanationNote"><b>Note:</b>In case of <b>bitwise </b>operators the operands first converted to <b>binary </b>and then bitwise operations are performed b/w the converted binary numbers.</p>
+
+<xmp class="code">console.log(7^3);
+
+7 ->        0 1 1 1
+3 ->      ^ 0 0 1 1
+-------------------
+result->    0 1 0 0  //-> 4 
+
+console.log(9&1);
+
+9 ->        1 0 0 1
+1 ->     &  0 0 0 1
+-------------------
+result->    0 0 0 1  //-> 1
+
+console.log(5|2);
+
+5 ->        0 1 0 1
+2 ->        0 0 1 0
+-------------------
+result->    0 1 1 1  //-> 7</xmp>
+
+            <p class="explanationHeading">String Operator</p>
+            <p class="explanationText">In javascript the <b>+ </b>operator is used to concatenate two strings.</p>
+<xmp class="code">var x = "Robert";
+var y = "Downey Jr";
+console.log(x+" "+y);   // -> "Robert Downey Jr"</xmp>
+
+<xmp class="code">var smile = "LOL"
+ smile+=" :D"
+ console.log(smile);  // -> "LOL :D" 
+</xmp>
+
+           <p class="explanationHeading">Logical Operators</p>
+            <p class="explanationText">Logical operators return true or false depending upon the value of operands.</p>
+            <p class="explanationText">There are three kinds of logical operators.</p>
+            <ul ><li class="explanationList"><b>&&</b>  (logical AND)</li>
+            <li class="explanationList"><b>||</b>  (logical OR)</li>
+            <li class="explanationList"><b>!</b>  (logical NOT)</li></ul>
+
+<xmp class="code">console.log(true&&true);  // -> true
+console.log(false&&true&&true);  // -> false</xmp>
+            <p class="explanationNote"><b>Note:</b>While using <b>Logical AND</b> if any of the operand value is <b>false</b> then the resultant expression will return false else it will return <b>true</b>.</p>
+<xmp class="code">console.log(true||true);  // -> true
+console.log(true||true||false);  // -> true
+console.log(false||false);  // -> false</xmp>
+            <p class="explanationNote"><b>Note:</b> In case of <b>Logical OR </b>if any of the operand value is <b>true</b> then the expression also returns true else it will return <b>false</b>.</p>
+
+<xmp class="code">console.log(!true);  // -> false
+console.log(!false);  // -> true</xmp>
+
+            <p class="explanationHeading">Conditional Operator</p>
+<xmp class="code">console.log(4<3?first:second);  // -> second
+console.log(4>3?first:second);  // -> first</xmp>          
+              
+              <p class="explanationText">In general..</p>
+              <xmp class="code">condition ? first : second</xmp>
+            <p class="explanationText">Conditional operator also known as <b>ternary</b> operator returns <b>first</b> if the condition is true else returns <b>second</b> if the condition is false.</p>
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
@@ -92,11 +263,13 @@
 			</div>
 		</div>
 
-		<div id="logical-operators" class="tabcontent">
+		<!--<div id="logical-operators" class="tabcontent">
 			<h3 class="heading">Logical Operators</h3>
 			<div class="content">
 				<!-- Start writing from here -->
-				<div class="navigationArrows">
+				
+         
+		   <!--		<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
 				</div>
@@ -107,17 +280,108 @@
 			<h3 class="heading">Conditional Operators</h3>
 			<div class="content">
 				<!-- Start writing from here -->
-				<div class="navigationArrows">
+		<!--		<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 		<div id="for-while" class="tabcontent">
 			<h3 class="heading" id="linksHeading">For, While</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+            <p class="explanationText">For performing an action again and again loops are used in javascript.</p>
+            <p class="explanationHeading">The "for" loop.</p>
+<xmp class="code">for(initialisation;terminationCondition;increment/decrement)
+{
+// action 
+}</xmp>
+
+            <p class="explanationText">The first value is the <b>initialisation</b> condition(from where loop starts),the second one is the <b>termination</b> condition(where loop ends) and the third one is the <b>increment/decrement</b> condition(the value incremented or decremented by the provided value).</p>
+<xmp class="code">for(var i=0;i<5;i++)
+{
+console.log("for loop prints: "+i);
+}</xmp>
+            <p class="explanationText">on console..</p>
+<xmp class="code">"for loop prints: 0"
+"for loop prints: 1"
+"for loop prints: 2"
+"for loop prints: 3"
+"for loop prints: 4"</xmp>    
+        <p class="explanationText">nested "for" loops..</p>
+<xmp class="code">for (var i = 1; i <= 5; i++) {
+var output = "";
+for (var j = 1; j <= i; j++) {
+     output += "*"
+    }
+  console.log(output);
+}</xmp>   
+        <p class="explanationText">on console..</p>
+<xmp class="code">"*"
+"**"
+"***"
+"****"
+"*****"</xmp>     
+
+
+        <p class="explanationHeading">The "for-in" loop</p>   
+        <p class="explanationText">The <b>for-in </b>loop iterates through the properties of an <b>object</b>.</p>
+<xmp class="code">var iceCream = {name:"Vadilal", flavour:"ButterScotch", type:"Cornetto"}; 
+var taste = "";
+var x;
+for (x in iceCream) {
+    taste += iceCream[x]+ " ";
+}
+console.log(taste);</xmp>
+        <p class="explanationText">on console..</p>
+<xmp class="code">"Vadilal ButterScotch Cornetto "</xmp> 
+<p class="explanationText"><b>Vadilal ButterScotch Cornetto</b> are the properties of the <b>iceCream </b>object.</p> 
+<p class="explanationText">Javascript <b>objects </b>will be discussed in the later section.</p>       
+
+
+
+            <p class="explanationHeading">The "While" loop</p>
+            <p class="explanationText">The <b>while</b> loop works until a condition returns false.</p>
+<xmp class="code">var i=5;  //initialisation
+while(i>=1)   //termination condition
+{
+console.log("While loop prints: "+i);
+i--;  //decrement condition
+}</xmp>
+
+            <p class="explanationText">on console..</p>
+<xmp class="code">"While loop prints: 5"
+"While loop prints: 4"
+"While loop prints: 3"
+"While loop prints: 2"
+"While loop prints: 1"</xmp>            
+  
+
+            <p class="explanationHeading">The "Do-while" loop</p>  
+<xmp class="code">var test=" ";
+var i=0;
+do {
+    test += "Do-While prints " + i+'\n';
+    i++;
+}
+while (i < 5);
+
+console.log(test);</xmp>
+
+            <p class="explanationText">on console..</p>
+<xmp class="code">" Do-While prints 0
+Do-While prints 1
+Do-While prints 2
+Do-While prints 3
+Do-While prints 4
+"</xmp>            
+            <p class="explanationText">in general..</p>
+<xmp class="code">do
+   statement
+while (condition);
+</xmp>
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
@@ -129,6 +393,69 @@
 			<h3 class="heading">Functions</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+            <p class="explanationText">For printing something on console..</p>
+            <xmp class="code">console.log("Can't talk what's app only!!");</xmp>
+            <p class="explanationText">Well, that's one way to go another way is to use <b>functions</b>.</p>
+<xmp class="code">function print(text){
+console.log(text);
+}</xmp>
+ 
+<xmp class = "code">print("Can't talk what's app only!!");</xmp>
+            <p class="explanationText">Will do the same.</p>
+            <p class="explanationText">A function in javascript can be used by using the keyword <b>function</b> followed by the <b>functionName</b>.Inside this function the whole block of code can be written.This is called defining the function.</p>
+            <p class="explanationText">In order to use that function we have to <b>call</b> or <b>invoke</b> that function, this can be done by writing the name of the function followed by <b>( )</b>.</p>
+
+            <p class="explanationText">A function can be passed with or without <b>arguments</b>.These <b>arguments</b> can be one or more than one.</p>
+<xmp class ="code">function noArgument(){
+console.log("Hello-Kitty!!");
+}
+
+noArgument(); //-> "Hello-Kitty!!"</xmp>
+
+<xmp class="code">function withArguments(one,two){
+console.log("My name is " +one+ " and i luv " +two+ " :-P");
+}
+
+withArguments("Kamal","Pizza"); 
+//->  "My name is Kamal and i luv Pizza :-P"</xmp>
+            
+            <p class="explanationText">In the <b>withArgument(one, two)</b> function the <b>one</b> and <b>two</b> are the arguments that are therefore used in the console.log() function.</p>
+
+            <p class="explanationText">in general..</p>
+<xmp class="code">function functionName(argument1,argument2,----){
+//set of instructions..
+}</xmp>            
+
+            <p class="explanationText">To send a value back out of a function we can use a <b>return</b> statement.</p>
+<xmp class="code">function valueBack(a, b)
+{
+   return a+b;
+}
+
+var x = valueBack(311,567);
+console.log(x); //->  878
+</xmp>
+            <p class="explanationText">In order to use this returned value we have to call the <b>valueBack(311,567)</b> function and then assign this to a variable <b>x</b>.</p>
+
+            <p class="explanationNote"><b>Note:</b> Any last statement in the javascript function will be treated as the return statement.</p>
+
+            <p class="explanationText">Any variable that is defined outside the function has a <b>global scope</b> and can be used outside as well as the inside of a function.</p>
+         
+            <p class="explanationText">Any variable that is defined inside of a function is of <b>local scope</b> and can be used inside of the function only.</p>
+            <p class="explanationNote"><b>Note: </b>The function arguments are also considered in the local scope.</p>
+
+<xmp class="code">var x = 21; //global scope
+function fun(){
+var y = 22;  //local scope
+console.log("I am "+ x +", next year I'm gonna be "+y);
+} 
+
+fun(); //->  "I am 21, next year I'm gonna be 22" 
+</xmp>
+
+
+
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
@@ -136,10 +463,147 @@
 			</div>
 		</div>
 
-		<div id="array-vectors" class="tabcontent">
-			<h3 class="heading">Array, Vectors</h3>
+		<div id="array" class="tabcontent">
+			<h3 class="heading">Array</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+				
+            <p class="explanationText">Arrays are used to store <b>multiple</b> values in a single variable.</p>
+<xmp class="code">var comedy = ["F.R.I.E.N.D.S","The Big Bang Theory", 
+"Two And a Half Men","How i Met Your Mother"];</xmp>       
+            <p class="explanationText">In the above code the different values are stored in a single variable named <b>comedy</b>.</p>
+
+            <p class="explanationText">The first element is located at the position <b>0</b> the second at the position <b>1</b> and so on..</p>
+<xmp class="code">console.log(comedy[0])  //->  "F.R.I.E.N.D.S";
+console.log(comedy[2]);  //-> "Two And a Half Men"</xmp>            
+             <p class="explanationText">We can also iterate through the whole array using the <b>for</b> loop.</p>
+<xmp class = "code">for(var i=0;i< comedy.length;i++)
+{
+   console.log(comedy[i]);	
+}</xmp>        
+            <p class="explanationText">results in..</p>
+<xmp class="code">"F.R.I.E.N.D.S"
+"The Big Bang Theory" 
+"Two And a Half Men"
+"How i Met Your Mother"</xmp>            
+            <p class="explanationText">Also, multiple <b>datatypes</b> can be added in an array.<p>
+<xmp class="code">var imdb = ["F.R.I.E.N.D.S.",9,"How i Met Your Mother",8.4];</xmp>
+<xmp class="code">console.log(imdb[3]);  //-> 8.4</xmp>            
+
+              <p class="explanationText">These are called <b>1-D</b> arrays.</p>
+            <p class="explanationText">We can also add multiple arrays inside an array using <b>multi-dimentional</b> arrays.</p>
+<xmp class="code">var cast = [["Sheldon", "Penny", "Leonard" , "Howard", "Raj"], 
+["Ted", "Robin", "Lily", "Marshal", "Barney"]];</xmp>  
+            
+            <p class="explanationText">There are two arrays inside an array naming <b>cast</b> each one of these can be accessed by using two square brackets.</p>          
+<xmp class="code">var x = cast[1][4];
+console.log(x);  //-> "Barney"</xmp>
+
+<xmp class="code">console.log(cast[0][0]);  //-> "Sheldon"</xmp>
+            <p class="explanationText">It is also possible to have multiple nested arrays as many as possible.</p>
+<xmp class="code">var num = [
+    [1,2,3],
+    [[4,5,6], 7, 8],
+    [9,10,11],
+    [12,13,14]   
+];</xmp>
+
+<xmp class="code">var x = num[1][0][1];
+console.log(x);  //-> 5  
+</xmp>
+
+
+            <p class="explanationHeading">Methods in an array</p>
+            <!--<li class="explanationList">push() and pop()</li>
+            <li class="explanationList">shift() and unshift()</li>
+            <li class="explanationList"></li>
+            <li class="explanationList"></li>
+            -->
+            <li class="explanationList">The <b>push()</b> method is used to append a data to the end of an array.</li>
+<xmp class="code">var x = ['a','b','c'];
+x.push('d');
+console.log(x);  //-> ["a", "b", "c", "d"]</xmp>
+
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.push(["Alan", 40, "Men"]);
+console.log(myArray);  //-> [["Charlie", 42, "Men"], ["Jake", 15, "Boy"], ["Alan", 40, "Men"]]</xmp>
+
+            <li class="explanationList">The <b>pop()</b> method removes an element from the end of an array.</li>
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.pop();
+console.log(myArray);  //-> [["Charlie", 42, "Men"]]</xmp>            
+
+            <li class="explanationList">The <b>shift()</b> method removes an element from the begining of an array.</li>
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.shift();
+console.log(myArray);  //-> [["Jake", 15, "Boy"]]</xmp>            
+
+            <li class="explanationList">The <b>unshift() </b>method adds an element at the starting index of an array.</li>
+<xmp class="code">var myArray = [["Charlie", 42, "Men"], ["Jake", 15, "Boy"]];
+myArray.unshift(["Alan", 40, "Men"]);
+console.log(myArray);  //-> [["Alan", 40, "Men"], ["Charlie", 42, "Men"], ["Jake", 15, "Boy"]]</xmp>
+
+
+            <li class="explanationList">The <b>reverse() </b>method reverses the array.</li>  
+<xmp class="code">var x = ["one","two","three","four","five"];
+x.reverse();
+console.log(x); //-> ["five", "four", "three", "two", "one"]</xmp>
+
+          <li class="explanationList">The <b>sort() </b>method sorts an array.</li>
+<xmp class="code">var friends = ["Rachel", "Chandler", "Ross", "Monica", "Joey", "Phoebe"];
+friends.sort();
+console.log(friends); //-> ["Chandler", "Joey", "Monica","Phoebe", "Rachel", "Ross"]</xmp>            
+<xmp class ="code">var num = [35,150,75];
+console.log(num.sort());  //-> [150, 35, 75]</xmp>            
+
+        <p class="explanationText">Which is incorrect!.This happens because the <b>sort()</b> method sorts the array values in an alphabetical or in ascending order by converting the values into strings, hence the "1" in "150" comes before the "3" in "35" and the "7" of "75" comes after "3" of "35" hence results in [150, 35, 75].</p>
+        <p class="explanationText">In order to avoid this a compare() function should be passed with the <b>sort()</b> method.</p>
+
+<xmp class="code">num.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(num); //-> [35,75,150]</xmp>        
+           <p class="explanationText">The compare function returns a negative number if a is  before b, a positive number if a is after b, or 0 if they are equal.</p>
+           <p class="explanationText">The above array can also be sorted in decreasing order just by changing the order of a with b and b with a.</p>
+<xmp class="code">num.sort(function(a, b) {
+  return b - a;
+});
+
+console.log(num); //-> [150,75,35]</xmp>           
+        
+        <p class="explanationText">Returns the array in decreasing order.</p>
+
+
+            <li class="explanationList">The <b>concat()</b> method joins two arrays.</li>
+<xmp class="code">var boys = ["Chandler","Ross", "Joey"];
+var girls = ["Monica", "Rachel", "Phoebe"];
+var friends = boys.concat(girls);
+console.log(friends);  //->  ["Chandler", "Ross", "Joey", "Monica", "Rachel", "Phoebe"]</xmp> 
+
+
+            <li class="explanationList">The <b>slice()</b> takes a particular part from an array.</li>
+<xmp class="code">var x = [34,23,88,3,10];
+console.log(x.slice(2));  //-> [88,3,10]
+console.log(x.slice(1,4));    //-> [23,88,3]</xmp> 
+
+
+            <p class="explanationNote"><b>Note:</b>The <b>slice(2)</b> method returns rest of the values starting from index 2, whereas the <b>slice(1,4)</b> returns the elements present from index 1 to 3 excluding the element present at the fourth index.</p> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
