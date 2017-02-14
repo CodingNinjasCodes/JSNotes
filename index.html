@@ -14,14 +14,15 @@
 		 <a onclick="openIntroductionPage()"><img src="images/logo.png"></a>
 		  <!--<a href="http://www.codingninjas.in/"><img src="images/logo.png"></a>-->
 		  <li onclick="openPage(event, 'introduction')" class="first"><a href="javascript:void(0)" class="tablinks">Introduction</a></li>
-		  <li onclick="openPage(event, 'variables')"><a href="javascript:void(0)" class="tablinks">Variables</a></li>
-		  <li onclick="openPage(event, 'data-types')"><a href="javascript:void(0)" class="tablinks">Datatypes</a></li>
+		  <li onclick="openPage(event, 'variables-and-data-types')"><a href="javascript:void(0)" class="tablinks">Variables & Data Types</a></li>
+		  <!-- <li onclick="openPage(event, 'data-types')"><a href="javascript:void(0)" class="tablinks">Datatypes</a></li> -->
 		  <li onclick="openPage(event, 'operators')"><a href="javascript:void(0)" class="tablinks">Operators</a></li>
 		 <!-- <li onclick="openPage(event, 'logical-operators')"><a href="javascript:void(0)" class="tablinks">Logical Operators</a></li>
 		  <li onclick="openPage(event, 'conditional-operators')"><a href="javascript:void(0)" class="tablinks">Conditional Operators</a></li>-->
 		  <li onclick="openPage(event, 'for-while')"><a href="javascript:void(0)" class="tablinks">For, While</a></li>
 		  <li onclick="openPage(event, 'functions')"><a href="javascript:void(0)" class="tablinks">Functions</a></li>
 		  <li onclick="openPage(event, 'array')"><a href="javascript:void(0)" class="tablinks">Array</a></li>
+		  <li onclick="openPage(event, 'closures')"><a href="javascript:void(0)" class="tablinks">Closures</a></li>
 		  <li onclick="openPage(event, 'objects')"><a href="javascript:void(0)" class="tablinks">Objects</a></li>
 		  <li onclick="openPage(event, 'prototypes')"><a href="javascript:void(0)" class="tablinks">Prototypes</a></li>
 		</ul>
@@ -38,7 +39,6 @@
 		  <a id="jump-to-intro" onclick="openPage(event, 'introduction')">Click here to begin!</a>
 		</div> -->
 
-
 		<div id="default" class="default-page">
 			<h3>Getting Started With</h3>
 			<h3 id="hidden-heading">JavaScript</h3>
@@ -53,6 +53,52 @@
 			<h3 class="heading">Introduction</h3>
 			<div class="content">
 				<!-- Start writing from here -->
+				<p class = "explanationText">
+					<b>JavaScript</b> is a light-weight, cross-platform, object-oriented language. Unlike C++ and Java, JavaScript is not a compiled language. It is an interpretted language like python, which means the JS code is executed line by line and if any error shows up, the interpretter stops there. JS is used for providing the control of HTML and CSS to the browser.
+				</p>
+				<p class="explanationText">
+					JS code can be interpretted on google-chrome or mozilla-firefox. For this tutorial, Google-chrome or Chromium-browser is preffered. Just press <kbd>ctrl+shit+i</kbd> and then go to <kbd>console</kbd> tab. You can either execute JS code line by line here or you can write the JS code in your favourite editor and then paste it here in the console. Now its time for the <em>hello-world</em> ritual. To print anything in the console, the syntax is: 
+				</p>
+				<div class="code">
+					console.log("Hello, World!!");
+				</div>
+				<p class="explanationText">
+					Also checkout the syntax below. It is used to create alerts.
+				</p>
+				<div class="code">
+					alert("Message that you want to display");
+				</div>
+				<p class="explanationText">
+					By now you might have noticed <code><b>undefined</b></code> that gets printed on the console after every command. The console always prints the whatever the last command returns. The <code><b>print</b></code> and <code><b>alert</b></code> functions don't return anything, so,  <code><b>undefined</b></code> is printed.
+				</p>
+				<h3 class="explanationHeading">
+					Comments in JS
+				</h3>
+				<p class="explanationText">
+					For  in-line comments the following syntax is used:
+				</p>
+				<div class="code">
+					console.log("testing") //This is a comment!!<br>
+					//This whole line is a comment!
+				</div>
+				<p class="explanationText">
+					For multiple line comments:
+				</p>
+				<div class="code">
+					/*Multi-line comments are <br> 
+					made in this way*/
+				</div>
+
+				<h3 class="explanationHeading">
+					Including javascript in a web page
+				</h3>
+				<p class="explanationText">
+					The tag <code><b>script</b></code> is used for including JS within a web page.
+				</p>
+<xmp class="code"><script src="/path_to_file/file.js" type="text/javascript"></script></xmp>
+				<p class="explanationText">
+					For including the JS inside the HTML document, the JS code must be enclosed within the <code><b>script</b></code> tags and the <code><b>src</b></code> attribute should not be mentioned. 
+				</p>
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
@@ -61,21 +107,47 @@
 		</div>
 
 
-		<div id="variables" class="tabcontent">
-			<h3 class="heading">Variables</h3>
+		<div id="variables-and-data-types" class="tabcontent">
+			<h3 class="heading">Variables & Data Types</h3>
 			<div class="content">
 				<!-- Start writing from here -->
-				<div class="navigationArrows">
-			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
-					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
+				<h3 class="explanationHeading">Data types</h3>
+				<p class="explanationText">
+					There are two kind of data types:
+					<dl class="explanationList">
+						<dt>Primitive-types</dt>
+						<dd><em>Boolean</em>:  a boolean data-type can have <code><b>true</b></code> or <code><b>false</b> values within it</code>.</dd>
+						<dd><em>Number</em>:  It is used to store numeric data in JS.</dd>
+						<dd><em>String: Used to store sequence of characters to represent text.</em></dd>
+						<dd><em>Null: </em> it is used as a reference that points no-where!</dd>
+						<dd><em>Undefined: </em> to refer to something that does't exist.</dd>
+						<dt>Object</dt>
+						<dd>We will be studying about objects in a later section in this tutorial.</dd>
+					</dl>
+				</p>
+				<h3 class="explanationHeading">Variables</h3>
+				<p class="explanationText">
+					JS is a dynamic type language which means that you don't have to specify the type of variables. The type is automatically managed by the JS engine. Variables are defined using the keyword <code><b>var</b></code> as follows:
+				</p>
+				<div class="code">
+				    var a = 42;    //holding number <br>
+				    var b = "Awesomenes"    //holding string
 				</div>
-			</div>
-		</div>
+				<h3 class="explanationHeading">
+					Scope of Variables
+				</h3>
+				<p class="explanationText">
+					A variable can have two kind of scopes in JS:
+					<dl class="explanationText">
+						<dt>Global Variables</dt>
+						<dd>They are declared outside functions and can be accessed anywhere inside JS code.</dd>
+						<dt>Local Vaariables</dt>
+						<dd>They are declared inside functions and don't exist outside the functions. You will be reading about the JS functions in a later section.</dd>
+					</dl>
+				</p>
 
-		<div id="data-types" class="tabcontent">
-			<h3 class="heading">Datatypes</h3>
-			<div class="content">
-				<!-- Start writing from here -->
+
+
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
 					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
@@ -611,10 +683,167 @@ console.log(x.slice(1,4));    //-> [23,88,3]</xmp>
 			</div>
 		</div>
 
+		<div id="closures" class="tabcontent">
+			<h3 class="heading">Closures</h3>
+		  	<div class="content">
+				<!-- Start writing from here -->
+				<p class="explanationNote"><em>NOTE: </em> Read this page very very carefully. The topic covered is the heart of Object Oriented Programming using JS.</p>
+				<p class="explanationText">
+					The local variables inside the funtions are recreated each time a function is called and these are independent of each other. Normally, in other languages when any function exits, the local variables are destroyed. JS has the ability to store functions as variables under some circumstances. Since functions can be stored in variable names like:
+				</p>
+<xmp class="code">var fun = function(){
+    //function Code
+}</xmp>
+				<div class="explanationText">
+					A variable containing a function can be returned from another function. Now the returned function can be stored in another variable and the returned function can be executed later on as follows:
+				</div>
+<xmp class="code">function outerFunction(){
+    var innerFunction = function(){
+        console.log("inner function was executed");
+    }
+    return innerFunction;
+}
+var fun = outerFunction();
+fun();</xmp>
+				<p class="explanationText">
+					Now consider the case below in which the returned function contains the local variables of the function being called.
+				</p>
+<xmp class="code">function outerFunction1(num){
+    var innerVar = 10*num;
+    return function(){
+        console.log(innerVar);
+    }
+}
+var fun1 = outerFunction1(1);
+var fun2 = outerFunction1(2);
+var fun3 = outerFunction1(3);
+var fun4 = outerFunction1(4);
+fun1();
+fun2();
+fun3();
+fun4();
+fun1();</xmp>
+				<p class="explanationText">
+					The above example prints the following things on the console.
+				</p>
+<xmp class="code">>10
+>20
+>30
+>40
+>10</xmp>
+				<p class="explanationText">
+					You might think why this is happening. The answer is that the local variables of the binding function are being used in the function that is being returned, then JS interpretter is smart enough to not to destroy the local variables. And since on each new call to any function the local variables are recreated, the returned functions have independent variables i.e, changing value of local variables of any of the returned function won't effect the others. <br>
+					This feature of storing specific intance of local variables of enclosing function is called <em>closure</em>.
+					A <em>closure</em> might be thought of as a closed packet of local variables of the enclosing function, that are being used in the function to be returned.
+				</p>
+				<p class="explanationNote">
+					<em>NOTE:</em> It is very important to use the keyword <code><b>var</b> before the variables that will be used in the closure because if the variable with same name exists in global scope too, closure won't be formed as desired and the global scope variable would be used in the function!</code>
+				</p>
+
+				<div class="navigationArrows">
+			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">
+					<img src="images/arrow_right.svg" title="Next Section" onclick="nextPage()">
+				</div>
+			</div>
+		</div>
+
 		<div id="objects" class="tabcontent">
 			<h3 class="heading">Objects</h3>
 		  	<div class="content">
 				<!-- Start writing from here -->
+
+				<p class="explanationText">
+					Concepts of Object Oriented Programming in JS are implemented a bit different manner from languages like, Java or C++. In Java Objects are a collection of properties which are stored in key and value pairs. Now you might wonder how the objects would have functions? This is simple, the ability of JS to store functions as the variables is exploited here! So, in JS, the objects are stored as a collection of key-value pairs. If all this seems fuzzy just wait for all the explanation below.
+				</p>
+
+				<h4 class="explanationHeading">Ways to access object properties</h4>
+				<p class="explanationText">
+					To access the object properties, we use the following syntax:
+<xmp class="code">objectName.propertyName;</xmp>
+				</p>
+				<p class="explanationText">
+					This syntax is also valid:
+				</p>
+<xmp class="code">object["propertyName"];</xmp>
+				<p class="explanationText">
+					In the above usage, first the expression inside the square brackets is evaluated and then then the final string formed is matched with the properties of the object.
+					<br>
+					In the case when the called property of the object doesn't exist, <code><b>undefined</b></code> is returned.
+				</p>
+
+				<h4 class="explanationHeading">Declaring an Object</h4>
+				<p class="explanationText">
+					There are many ways of declaring objects in JS each one with its own benefits.
+				</p>
+				<p class="explanationText">The following syntax is used for declaring an Object and for declaring object properties:</p>
+<xmp class="code">var myPC = new Object();
+myPC.make = "hp";
+myPC.model = "pavillion";
+myPC.year = 2014;</xmp>
+				<h2 class="explanationSubHeading">
+					Using object intiializers
+				</h2>
+				<p class="explanationText">
+					The syntax for an object using an object initializer is:
+				</p>
+
+<xmp class="code">var obj = { property_1:   value_1,  2:value_2,
+             // ...,"property n": value_n }; </xmp>
+
+             	<p class="explanationText">
+             		The <code>property</code> can be of type String or integer and the <code>value</code> can store anything like a <code>var</code>!
+             	</p>
+
+             	<h5 class="explanationSubHeading">
+             		Using constructor
+             	</h5>
+             	<p class="explanationText">
+             		For this form, first a constructor function is made and to make an object <code><b>new</b></code> keyword is used!
+             	</p>
+
+<xmp class="code">function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+var myCar = new Car("Toyota","Fortuner",2017)</xmp>
+				<p class="explanationText">
+					When <code><b>new</b></code> keyword is used a new space is allocated for the variable and in the constructor the object is refered using <code><b>this</b></code> keyword. 
+				</p>
+				<h5 class="explanationSubHeading">Using <code>Object.create</code> method</h5>
+				<p class="explanationText">
+					Objects can also be created using the Object.create() method. This method can be very useful, because it allows you to choose the prototype object for the object you want to create, without having to define a constructor function. You will be studying about prototypes in the next section! The code is:
+				</p>
+<xmp class="code">// Animal properties and method encapsulation
+var Animal = {
+  type: "Invertebrates", // Default value of properties
+  displayType : function() {  // Method which will display type of Animal
+    console.log(this.type);
+  }
+}
+
+// Create new animal type called animal1 
+var animal1 = Object.create(Animal);
+animal1.displayType(); // Output:Invertebrates
+
+// Create new animal type called Fishes
+var fish = Object.create(Animal);
+fish.type = "Fishes";
+fish.displayType(); // Output:Fishes</xmp>
+
+				<h4 class="explanationHeading">Iterating object properties</h4>
+				<p class="explanationText">
+					The object properties can be iterated using the <code><b>for...in</b></code> loop construct as follows:
+				</p>
+
+<xmp class="code">var obj = myPC;
+
+for (var prop in obj) {
+  console.log('obj.' + prop, '=', obj[prop]);
+}</xmp>
+
+
+				<div class=""></div>
 
 				<div class="navigationArrows">
 			  		<img src="images/arrow_left.svg" title="Previous section" onclick="previousPage()">

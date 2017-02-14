@@ -13,7 +13,7 @@ function openIntroductionPage(){
 function openPage(evt, PageName) {
     localStorage.setItem("last_visited",PageName);
     localStorage.setItem("last_visited_link",evt.currentTarget)
-    if(localStorage.visit_history == undefined){
+    if(typeof localStorage.visit_history == 'undefined'){
         localStorage.setItem("visit_history","");
     }
     document.getElementById("default").style.display = "none";
