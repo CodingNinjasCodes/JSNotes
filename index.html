@@ -131,7 +131,7 @@
 				</p>
 				<div class="code">
 				    var a = 42;    //holding number <br>
-				    var b = "Awesomenes"    //holding string
+				    var b = "Awesomeness"    //holding string
 				</div>
 				<h3 class="explanationHeading">
 					Scope of Variables
@@ -141,7 +141,7 @@
 					<dl class="explanationText">
 						<dt>Global Variables</dt>
 						<dd>They are declared outside functions and can be accessed anywhere inside JS code.</dd>
-						<dt>Local Vaariables</dt>
+						<dt>Local Variables</dt>
 						<dd>They are declared inside functions and don't exist outside the functions. You will be reading about the JS functions in a later section.</dd>
 					</dl>
 				</p>
@@ -689,7 +689,7 @@ console.log(x.slice(1,4));    //-> [23,88,3]</xmp>
 				<!-- Start writing from here -->
 				<p class="explanationNote"><em>NOTE: </em> Read this page very very carefully. The topic covered is the heart of Object Oriented Programming using JS.</p>
 				<p class="explanationText">
-					The local variables inside the funtions are recreated each time a function is called and these are independent of each other. Normally, in other languages when any function exits, the local variables are destroyed. JS has the ability to store functions as variables under some circumstances. Since functions can be stored in variable names like:
+					The local variables inside the functions are recreated each time a function is called and these are independent of each other. Normally, in other languages when any function exits, the local variables are destroyed. JS has the ability to store functions as variables under some circumstances. Since functions can be stored in variable names like:
 				</p>
 <xmp class="code">var fun = function(){
     //function Code
@@ -864,5 +864,48 @@ for (var prop in obj) {
 			</div>
 		</div>
 	</div>
+
+<input type="image" id="moveTop" src="http://www.clker.com/cliparts/w/B/n/x/j/A/arrow-orange-md.png"></input>
+
 </body>
+<script type="text/javascript">
+var moveToTopLibrary = function(idOfButton, time, frequency){
+    var moveToTopButton = document.getElementById(idOfButton);
+    
+    var intervalId;
+
+    window.addEventListener('wheel', function(event){
+        if(intervalId!=null && event.deltaY > 0){
+            clearInterval(intervalId);
+        }
+    });
+
+ var moveToTop = function(event){
+        console.log(this);
+        console.log("moveToTop was called");
+
+
+        var currentY = window.scrollY;
+
+
+        var delta = currentY / (time/frequency);
+        if(intervalId != null){
+            clearInterval(intervalId);
+        }
+        intervalId = setInterval(function(){
+
+            window.scrollTo(window.scrollX, window.scrollY - delta);
+
+            if(window.scrollY == 0){
+                clearInterval(intervalId);
+            }
+
+        },frequency);
+
+    };
+    moveToTopButton.addEventListener('click', moveToTop);
+};
+
+moveToTopLibrary('moveTop', 2000, 10);
+</script>
 </html>
